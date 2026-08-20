@@ -1,0 +1,12 @@
+{
+  "_uitleg": "Video's per pagina, afgevangen van de originele Wix-pagina's. src=null betekent: er staat een videospeler op het origineel maar de bron was niet uitleesbaar — daar komt een duidelijke placeholder. Vul src in en draai build3.py opnieuw.",
+  "gunter-groep-grondwerker": [{"heading": "Gunter Groep; Wie zijn wij?", "src": "https://video.wixstatic.com/video/256006_27ee62cf9ab246b98518b8c6f2bd4d97/1080p/mp4/file.mp4"}],
+  "gunter-groep-kraanmachinist": [{"heading": "Gunter Groep; Wie zijn wij?", "src": "https://video.wixstatic.com/video/256006_27ee62cf9ab246b98518b8c6f2bd4d97/1080p/mp4/file.mp4"}],
+  "gunter-groep-stratenmaker": [{"heading": "Gunter Groep; Wie zijn wij?", "src": "https://video.wixstatic.com/video/256006_27ee62cf9ab246b98518b8c6f2bd4d97/1080p/mp4/file.mp4"}],
+  "wibro-monteur": [{"heading": null, "src": "https://video.wixstatic.com/video/dafd0f_e0c08714b8c949449cd9e7baba72b572/1080p/mp4/file.mp4"}],
+  "bakker-machinefabriek-machinebouwer": [{"heading": "Hoe is het om te werken bij Bakker?", "src": "https://video.wixstatic.com/video/e52e10_26b2337ad0e7414081d1dd7292136d50/1080p/mp4/file.mp4"}],
+  "bakker-machinefabriek-leerling-monteur": [{"heading": "Hoe is het om te werken bij Bakker?", "src": "https://video.wixstatic.com/video/e52e10_26b2337ad0e7414081d1dd7292136d50/1080p/mp4/file.mp4"}],
+  "bakker-bouman": [{"heading": "Een kijkje achter de schermen:", "src": null}],
+  "sligro-1-1-1": [{"heading": "Hoe is het nou echt om bij ons te leren?", "src": null}],
+  "sw-bouwkundig-ingenieurs": [{"heading": "Adviseur Brandveiligheid", "src": null}]
+}

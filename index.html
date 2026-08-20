@@ -1,237 +1,618 @@
 <!DOCTYPE html>
 <html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Vacature Kraanmachinist - Solliciteer Nu</title><meta name="description" content="Werken op de mooiste graafmachines? Als kraanmachinist bij Kloosterman ga jij aan de slag op onze prachtigste projecten.">
+<title>Kom Werken Bij — alle vacatures in Zuidwest-Nederland</title><meta name="description" content="75 openstaande vacatures bij 35 werkgevers uit de regio. Bekijk het bedrijf en solliciteer direct.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>:root{--p:#fddf08;--pd:#b6a005;--forest:#15170f;--forest2:#22251a;
---acc:#1b1b1b;--accd:#151515;--ona:#ffffff;--onp:#111a14;--lite:#fddf08;
---ink:#151f19;--muted:#5b665e;--paper:#f5f6f2;--line:#e3e7dd;--shadow:0 24px 60px -18px rgba(10,20,12,.35)}
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>
+:root{--navy:#101d31;--navy2:#1b3252;--acc:#ff6b35;--acc-d:#e04f1d;
+--ink:#16212e;--muted:#5b6672;--paper:#f6f5f1;--line:#e7e3d9}
 *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
 body{font-family:'Inter',-apple-system,'Segoe UI',Roboto,sans-serif;color:var(--ink);background:#fff;line-height:1.7;font-size:17px;overflow-x:hidden}
-h1,h2,h3{font-family:'Archivo','Inter',-apple-system,sans-serif;letter-spacing:-.02em;line-height:1.12}
+h1,h2,h3{font-family:'Sora','Inter',sans-serif;letter-spacing:-.02em;line-height:1.12}
 a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
-strong{font-weight:800}
 .wrap{max-width:1160px;margin:0 auto;padding:0 28px}
 .rv{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.2,.6,.2,1),transform .7s cubic-bezier(.2,.6,.2,1)}
 .rv.in{opacity:1;transform:none}
 .rv.d1{transition-delay:.08s}.rv.d2{transition-delay:.16s}.rv.d3{transition-delay:.24s}
 @media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+/* header */
 .top{position:fixed;top:0;left:0;right:0;z-index:80;transition:.3s}
-.top .wrap{display:flex;align-items:center;gap:20px;height:72px}
-.top.solid{background:rgba(255,255,255,.96);backdrop-filter:blur(10px);box-shadow:0 2px 18px rgba(10,20,12,.1)}
-.wm{font-family:'Archivo','Inter',-apple-system,sans-serif;font-weight:800;font-size:1.08rem;letter-spacing:.02em;color:#fff;transition:.3s}
-.hnav{display:flex;align-items:center;gap:18px;margin-left:auto}
-.navlink{color:rgba(255,255,255,.88);font-weight:700;font-size:.92rem;transition:.2s}
-.navlink:hover{color:#fff}
-.top.solid .navlink{color:var(--muted)}
-.top.solid .navlink:hover{color:var(--ink)}
-@media(max-width:560px){.navlink{display:none}}
+.top .wrap{display:flex;align-items:center;gap:22px;height:74px}
+.top.solid{background:rgba(255,255,255,.96);backdrop-filter:blur(10px);box-shadow:0 2px 18px rgba(16,29,49,.1)}
+.wm{font-family:'Sora','Inter',-apple-system,sans-serif;font-weight:800;font-size:1.12rem;letter-spacing:.02em;color:#fff;transition:.3s}
+.wm em{font-style:normal;color:var(--acc)}
 .top.solid .wm{color:var(--ink)}
-.btn{display:inline-flex;align-items:center;gap:10px;background:var(--acc);color:var(--ona);font-weight:800;
-padding:15px 28px;border-radius:14px;border:0;cursor:pointer;font-size:1.01rem;font-family:'Inter',sans-serif;
-transition:transform .18s,box-shadow .18s,filter .18s;box-shadow:0 10px 26px -8px rgba(0,0,0,.3)}
+nav.main{display:flex;gap:22px;margin-left:auto;align-items:center}
+nav.main a{font-weight:600;font-size:.92rem;color:rgba(255,255,255,.85)}
+nav.main a:hover{color:#fff}
+.top.solid nav.main a{color:var(--muted)}.top.solid nav.main a:hover{color:var(--ink)}
+@media(max-width:700px){nav.main a:not(.btn){display:none}}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--acc);color:#fff;font-weight:800;
+padding:15px 28px;border-radius:14px;border:0;cursor:pointer;font-size:1rem;
+transition:transform .18s,box-shadow .18s,background .18s;box-shadow:0 10px 26px -8px rgba(224,79,29,.5)}
 .btn .ar{transition:transform .18s;font-weight:900}
-.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
+.btn:hover{transform:translateY(-2px);background:var(--acc-d)}
 .btn:hover .ar{transform:translateX(4px)}
-.btn.small{padding:10px 18px;font-size:.88rem;border-radius:11px}
-.btn.dark{background:var(--forest);color:#fff}
-.sep{height:72px;margin-top:-72px;position:relative;z-index:6;pointer-events:none}
-.sep svg{display:block;width:100%;height:100%}
-.hero{position:relative;min-height:88vh;display:flex;align-items:center;color:var(--onp);
-background:linear-gradient(115deg,var(--forest) 0%,var(--pd) 48%,var(--p) 100%);padding:128px 0 110px}
-.hero.hasbg{background:linear-gradient(115deg,rgba(0,0,0,.55),rgba(0,0,0,.25)),linear-gradient(115deg,var(--forest) 0%,var(--pd) 48%,var(--p) 100%);color:#fff}
-.hero .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center;position:relative;z-index:2}
-.hero .grid.one{grid-template-columns:1fr;max-width:760px}
-@media(max-width:900px){.hero .grid{grid-template-columns:1fr}.hero{min-height:auto;padding:118px 0 125px}}
-.crumb{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);
-padding:8px 16px;border-radius:999px;font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;backdrop-filter:blur(6px)}
-.crumb .dot{width:8px;height:8px;border-radius:50%;background:#7dff6a;box-shadow:0 0 0 4px rgba(125,255,106,.25);animation:pulse 2s infinite}
-@keyframes pulse{0%,100%{box-shadow:0 0 0 4px rgba(125,255,106,.25)}50%{box-shadow:0 0 0 8px rgba(125,255,106,.08)}}
-.hero h1{font-size:clamp(2.1rem,4.8vw,3.6rem);font-weight:800;margin:22px 0 14px}
-.hero h1 em{font-style:normal;position:relative;white-space:nowrap}
-.hero h1 em svg{position:absolute;left:0;right:0;bottom:-9px;width:100%;height:13px}
-.hero .sub{font-size:1.26rem;font-weight:600;margin-bottom:18px;opacity:.96}
-.hero p{opacity:.92;margin-bottom:8px}
-.perks{list-style:none;display:flex;flex-direction:column;gap:10px;margin:16px 0 26px}
-.perks li{display:flex;align-items:center;gap:14px;font-size:1.05rem;font-weight:600}
-.perks .tx,.vidgrid ul .tx{flex:1}
-.perks .ic{width:42px;height:42px;flex:0 0 auto;border-radius:13px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.24);
-display:flex;align-items:center;justify-content:center;font-size:1.25rem;backdrop-filter:blur(4px)}
-.cta-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:8px}
-.pcomp{position:relative;justify-self:end;width:min(420px,100%)}
-.pcomp .frame{position:absolute;inset:26px -26px -26px 26px;border-radius:26px;background:rgba(255,255,255,.16);border:1.5px solid rgba(255,255,255,.35)}
-.pcomp .photo{position:relative;border-radius:26px;overflow:hidden;box-shadow:var(--shadow)}
-.pcomp .photo img{width:100%;height:480px;object-fit:cover;transition:transform .6s}
-.pcomp:hover .photo img{transform:scale(1.03)}
-@media(max-width:900px){.pcomp{justify-self:start}.pcomp .photo img{height:380px}}
-section{position:relative}
-.pad{padding:92px 0}
-.kick{display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--pd);margin-bottom:16px}
+.btn.small{padding:10px 18px;font-size:.9rem;border-radius:11px}
+.btn.ghost{background:rgba(255,255,255,.12);border:1.5px solid rgba(255,255,255,.4);box-shadow:none;backdrop-filter:blur(4px)}
+.btn.ghost:hover{background:rgba(255,255,255,.22)}
+/* hero */
+.hero{position:relative;background:radial-gradient(1100px 600px at 85% -20%,#2b527f 0%,var(--navy2) 40%,var(--navy) 80%);color:#fff;padding:150px 0 130px}
+.hero:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:90px;background:#fff;clip-path:polygon(0 62%,100% 0,100% 100%,0 100%)}
+.hero .kick{color:#ffa27c}
+.hero h1{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:800;max-width:820px}
+.hero h1 em{font-style:normal;color:#ffa27c;position:relative;white-space:nowrap}
+.hero h1 em svg{position:absolute;left:0;right:0;bottom:-8px;width:100%;height:13px}
+.hero .lead{margin:20px 0 30px;font-size:1.18rem;color:#c9d4e2;max-width:600px}
+.stats{display:flex;gap:40px;margin-top:40px;flex-wrap:wrap}
+.stats b{display:block;font-family:'Sora','Inter',-apple-system,sans-serif;font-size:2rem;font-weight:800}
+.stats span{color:#9fb0c4;font-size:.9rem}
+.kick{display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--acc-d);margin-bottom:16px}
 .kick:before{content:"";width:26px;height:3px;background:var(--acc);border-radius:2px}
-h2.t{font-size:clamp(1.6rem,3.3vw,2.4rem);font-weight:800;margin-bottom:18px}
-.lead{font-size:1.13rem;color:#333f37;max-width:64ch}
-.lead+.lead{margin-top:14px}
-.twocol{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
-.twocol.flip .txt{order:2}.twocol.flip .media{order:1}
-@media(max-width:900px){.twocol,.twocol.flip{grid-template-columns:1fr;gap:38px}.twocol.flip .txt{order:1}.twocol.flip .media{order:2}}
-.photostack{position:relative}
-.photostack img{border-radius:24px;width:100%;height:430px;object-fit:cover;box-shadow:var(--shadow)}
-.media.multi{display:grid;gap:14px;grid-template-columns:1fr 1fr}
-.media.multi img{border-radius:18px;height:260px;width:100%;object-fit:cover;box-shadow:0 12px 30px rgba(10,20,12,.18)}
-.videoband{background:radial-gradient(1200px 600px at 80% -10%,var(--forest2) 0%,var(--forest) 55%);color:#fff;padding:150px 0 122px;
-clip-path:polygon(0 0,100% 64px,100% 100%,0 100%);margin-top:-64px;position:relative;z-index:4}
-.videoband .kick{color:var(--lite)}.videoband .kick:before{background:var(--lite)}
-.videoband p,.videoband .lead{color:rgba(255,255,255,.82)}
-.vidgrid{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:center;margin-top:36px}
-@media(max-width:900px){.vidgrid{grid-template-columns:1fr}}
-.vidgrid ul{list-style:none;display:flex;flex-direction:column;gap:14px}
-.vidgrid ul li{display:flex;gap:14px;align-items:flex-start;font-weight:600;color:rgba(255,255,255,.92)}
-.vidgrid ul .ic{width:34px;height:34px;flex:0 0 auto;border-radius:10px;background:rgba(255,255,255,.14);color:var(--lite);font-weight:900;
-display:flex;align-items:center;justify-content:center;font-size:.95rem}
-.vplayer{position:relative;border-radius:24px;overflow:hidden;box-shadow:0 40px 90px -20px rgba(0,0,0,.6);cursor:pointer;background:#000}
-.vplayer video{width:100%;aspect-ratio:16/9;display:block}
-.vplayer .cover{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;
-background-size:cover;background-position:center;transition:opacity .4s}
-.vplayer .cover:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.18),rgba(0,0,0,.5))}
-.vplayer .cover.hide{opacity:0;pointer-events:none}
-.vplayer .playbtn{position:relative;width:88px;height:88px;border-radius:50%;background:var(--acc);color:var(--ona);display:flex;align-items:center;justify-content:center;
-font-size:1.8rem;padding-left:6px;box-shadow:0 0 0 0 rgba(255,255,255,.4);animation:ring 2.2s infinite;transition:transform .2s}
-.vplayer:hover .playbtn{transform:scale(1.08)}
-@keyframes ring{0%{box-shadow:0 0 0 0 rgba(255,255,255,.35)}70%{box-shadow:0 0 0 24px rgba(255,255,255,0)}100%{box-shadow:0 0 0 0 rgba(255,255,255,0)}}
-.vplayer .cover b{position:relative;font-family:'Archivo','Inter',sans-serif;font-size:1.1rem}
-.vph{aspect-ratio:16/9;border-radius:24px;margin:26px 0 0;background:repeating-linear-gradient(45deg,#161d18,#161d18 14px,#1d2620 14px,#1d2620 28px);
-border:2px dashed rgba(255,255,255,.35);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#e5ece2;gap:12px;text-align:center;padding:20px}
-.vph .play{width:70px;height:70px;border-radius:50%;background:var(--acc);color:var(--ona);display:flex;align-items:center;justify-content:center;font-size:1.5rem}
-.vph b{font-size:1.05rem}.vph span{font-size:.83rem;opacity:.7;max-width:420px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;margin-top:40px}
-.card{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:28px 26px;transition:transform .25s,box-shadow .25s}
-.card:hover{transform:translateY(-6px);box-shadow:0 22px 44px -16px rgba(10,20,12,.2)}
-.card .em{width:52px;height:52px;border-radius:16px;background:linear-gradient(135deg,var(--p),var(--pd));color:var(--onp);
-display:flex;align-items:center;justify-content:center;font-size:1.45rem;margin-bottom:16px;box-shadow:0 10px 22px -8px rgba(0,0,0,.3)}
-.card b{font-family:'Archivo','Inter',sans-serif;font-size:1.02rem;display:block;line-height:1.45;font-weight:700}
-.checks{display:flex;flex-direction:column;gap:14px;margin-top:26px}
-.check{display:flex;gap:16px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:16px;padding:17px 22px;
-font-weight:600;transition:transform .2s,box-shadow .2s}
-.check:hover{transform:translateX(6px);box-shadow:0 12px 28px -12px rgba(10,20,12,.16)}
-.check .ic{width:34px;height:34px;flex:0 0 auto;border-radius:50%;background:var(--p);color:var(--onp);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:.9rem}
-blockquote.q{background:#fff;border-left:6px solid var(--acc);border-radius:0 16px 16px 0;padding:26px 30px;font-size:1.15rem;font-weight:600;color:#333f37;
-box-shadow:0 10px 30px rgba(10,20,12,.1);margin:16px 0}
-blockquote.q footer{margin-top:10px;font-size:.9rem;color:var(--muted);font-weight:800}
-section.blk.alt{background:var(--paper)}
-section.blk{position:relative;z-index:1}
-.ctaband{background:linear-gradient(115deg,var(--pd),var(--p));color:var(--onp);padding:96px 0 66px;
-clip-path:polygon(0 0,100% 44px,100% 100%,0 100%);margin-top:-44px;position:relative;z-index:4}
+h2.t{font-size:clamp(1.7rem,3.4vw,2.4rem);font-weight:800;margin-bottom:14px}
+.pad{padding:90px 0}
+/* filter */
+.filterbar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:34px 0 10px}
+.filterbar input[type=search]{flex:1;min-width:240px;padding:16px 20px;border:2px solid var(--line);border-radius:15px;font-size:1.02rem;background:#fff;font-family:'Inter'}
+.filterbar input:focus{outline:none;border-color:var(--acc);box-shadow:0 0 0 4px rgba(255,107,53,.12)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+.chip{padding:9px 16px;border-radius:999px;border:2px solid var(--line);background:#fff;font-weight:700;font-size:.86rem;cursor:pointer;color:var(--muted);transition:.15s;font-family:'Inter'}
+.chip:hover{border-color:var(--acc);color:var(--ink)}
+.chip.on{background:var(--acc);border-color:var(--acc);color:#fff}
+.count-note{color:var(--muted);font-size:.9rem;margin:18px 0 24px;font-weight:600}
+/* cards */
+.grid3{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px}
+.vcard{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;transition:transform .22s,box-shadow .22s;position:relative}
+.vcard:hover{transform:translateY(-6px);box-shadow:0 22px 44px -14px rgba(16,29,49,.2)}
+.vcard .thumb{height:170px;position:relative;display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Sora','Inter',-apple-system,sans-serif;font-size:2.2rem;font-weight:800;overflow:hidden}
+.vcard .thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.vcard:hover .thumb img{transform:scale(1.06)}
+.vcard .cbadge{position:absolute;left:14px;bottom:12px;background:rgba(255,255,255,.94);color:var(--ink);font-family:'Inter';
+font-size:.78rem;font-weight:800;padding:6px 12px;border-radius:9px;z-index:2;box-shadow:0 4px 12px rgba(0,0,0,.18)}
+.vcard .body{padding:20px 22px 22px;display:flex;flex-direction:column;flex:1}
+.vcard h3{font-size:1.16rem;font-weight:800;line-height:1.32;margin:8px 0 2px}
+.vcard .loc{color:var(--muted);font-size:.9rem;font-weight:600}
+.vcard .go{margin-top:auto;padding-top:16px;color:var(--acc-d);font-weight:800;font-size:.93rem}
+.vcard .go .ar{display:inline-block;transition:transform .18s}
+.vcard:hover .go .ar{transform:translateX(5px)}
+.vcard a.cover{position:absolute;inset:0;z-index:3}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.tag{background:var(--paper);border:1px solid var(--line);color:#7a6f5a;font-size:.68rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:7px}
+/* zo werkt het */
+.how{background:var(--navy);color:#fff;padding:100px 0 110px;clip-path:polygon(0 0,100% 56px,100% 100%,0 100%);margin-top:70px}
+.how .kick{color:#ffa27c}
+.how p{color:#b9c6d6}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;margin-top:44px}
+.step{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:30px;transition:transform .22s,background .22s}
+.step:hover{transform:translateY(-5px);background:rgba(255,255,255,.1)}
+.step .num{display:inline-flex;width:44px;height:44px;border-radius:13px;background:var(--acc);color:#fff;align-items:center;justify-content:center;font-family:'Sora','Inter',-apple-system,sans-serif;font-weight:800;font-size:1.15rem;margin-bottom:18px}
+.step h3{font-size:1.1rem;margin-bottom:8px}
+.step p{font-size:.95rem}
+/* footer */
+footer{background:#0b1524;color:#8fa2b8;padding:40px 0}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+footer nav{display:flex;gap:18px}footer a{font-size:.88rem}footer a:hover{color:#fff}
+.hidden{display:none!important}
+/* over ons */
+.prose{max-width:780px}
+.prose p{margin-bottom:16px;font-size:1.1rem;color:#33413a}
+.usps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;margin:40px 0}
+.usp{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:28px;transition:transform .22s,box-shadow .22s}
+.usp:hover{transform:translateY(-5px);box-shadow:0 18px 36px -14px rgba(16,29,49,.16)}
+.usp .em{width:52px;height:52px;border-radius:15px;background:linear-gradient(135deg,var(--acc),var(--acc-d));color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:16px}
+.usp b{font-family:'Sora','Inter',-apple-system,sans-serif;display:block;margin-bottom:6px}
+.usp p{color:var(--muted);font-size:.94rem}
+.ctaband{background:linear-gradient(115deg,var(--acc-d),var(--acc));color:#fff;padding:70px 0;clip-path:polygon(0 0,100% 30px,100% 100%,0 calc(100% - 30px));margin:60px 0 0}
 .ctaband .wrap{display:flex;align-items:center;justify-content:space-between;gap:26px;flex-wrap:wrap}
-.ctaband h2{font-size:clamp(1.4rem,3vw,2.1rem);font-weight:800}
-.apply{background:radial-gradient(1000px 500px at 15% 0%,var(--forest2) 0%,var(--forest) 60%);color:#fff;padding:150px 0 116px;clip-path:polygon(0 48px,100% 0,100% 100%,0 100%);margin-top:-48px;position:relative;z-index:4}
-.apply .grid{display:grid;grid-template-columns:1fr 1.05fr;gap:66px;align-items:center}
-@media(max-width:900px){.apply .grid{grid-template-columns:1fr;gap:42px}}
-.apply .kick{color:var(--lite)}.apply .kick:before{background:var(--lite)}
-.apply p,.apply .lead{color:rgba(255,255,255,.85)}
-.apply ul.mini{list-style:none;margin-top:26px;display:flex;flex-direction:column;gap:14px}
-.apply ul.mini li{display:flex;gap:14px;align-items:center;font-weight:700}
-.apply ul.mini .ic{width:38px;height:38px;flex:0 0 auto;border-radius:12px;background:rgba(255,255,255,.13);display:flex;align-items:center;justify-content:center}
-.fcard{background:#fff;color:var(--ink);border-radius:26px;padding:36px;box-shadow:0 50px 110px -24px rgba(0,0,0,.55)}
-.fcard h3{font-size:1.28rem;margin-bottom:4px}
-.fcard .fsub{font-size:.9rem;color:var(--muted);margin-bottom:14px}
-.fcard label{display:block;font-size:.82rem;font-weight:800;margin:15px 0 7px;color:#3b463e}
-.fcard input,.fcard textarea{width:100%;padding:15px 17px;border-radius:13px;border:1.5px solid var(--line);font-size:1rem;
-font-family:'Inter',sans-serif;background:#fafbf8;transition:border-color .2s,box-shadow .2s}
-.fcard input:focus,.fcard textarea:focus{outline:none;border-color:var(--p);box-shadow:0 0 0 4px rgba(0,0,0,.06)}
-.fcard .btn{width:100%;justify-content:center;margin-top:22px;font-size:1.06rem;padding:16px}
-.fcard .note{font-size:.8rem;color:var(--muted);margin-top:13px;text-align:center}
-.formok{display:none;background:#e9f6ec;border:1.5px solid #2f8f4e;color:#1c5230;border-radius:14px;padding:18px 20px;margin-top:16px;font-weight:700}
-footer{background:#0c130e;color:#8b9a8d;padding:32px 0}
-footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
-footer span{font-size:.86rem}
-.stickycta{display:none;position:fixed;left:0;right:0;bottom:0;z-index:90;padding:12px 16px calc(12px + env(safe-area-inset-bottom));
-background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border-top:1px solid var(--line);box-shadow:0 -8px 30px rgba(10,20,12,.16)}
-.stickycta .btn{width:100%;justify-content:center}
-@media(max-width:760px){.stickycta{display:block}}
-.simple{padding:150px 0 110px;text-align:center;min-height:70vh}
-.simple h1{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;margin-bottom:14px}
-.simple p{color:var(--muted);max-width:560px;margin:0 auto 22px}
-.hero{background:linear-gradient(115deg,#fde220 0%,#fddf08 55%,#dec407 100%)}
-.hero .crumb{background:rgba(0,0,0,.1);border-color:rgba(0,0,0,.2)}
-.hero .crumb .dot{background:#1c8f3a;box-shadow:0 0 0 4px rgba(28,143,58,.2)}
-.hero .perks .ic{background:rgba(0,0,0,.08);border-color:rgba(0,0,0,.16);backdrop-filter:none}
-.hero .pcomp .frame{background:rgba(0,0,0,.1);border-color:rgba(0,0,0,.22)}
-.top:not(.solid) .wm{color:#171a10}
-.top:not(.solid) .navlink{color:#3c4436}
-.hero{background:#f7f8f5;color:#141a16;min-height:84vh}
-.top:not(.solid) .wm{color:#141a16}
-.hero .crumb{background:#fefbe6;border-color:#fef5b4;color:#8b7a04}
-.hero .crumb .dot{background:#fddf08}
-.hero .perks .ic{background:#fefceb;border-color:#fef7c8;backdrop-filter:none}
-.hero h1 em{color:#d7bd06}
-.pcomp .frame{background:#fefad9;border-color:#fef29c}
-.pcomp .photo{border-radius:14px}
-.btn,.btn.small{border-radius:9px}
-.card,.check{border-radius:12px}
-.fcard{border-radius:16px}
-.photostack img{border-radius:14px}
-.videoband{clip-path:polygon(0 64px,100% 0,100% 100%,0 100%)}
-.ctaband{clip-path:polygon(0 44px,100% 0,100% 100%,0 100%)}
-.vplayer,.vph{border-radius:14px}</style></head>
-<body id="pagetop">
+.ctaband h2{font-size:clamp(1.5rem,3vw,2.1rem);font-weight:800}
+.ctaband p{opacity:.94}
+.ctaband .btn{background:#fff;color:var(--acc-d)}
+.ctaband .btn:hover{background:var(--navy);color:#fff}
+</style></head>
+<body id="top">
 <header class="top" id="hdr"><div class="wrap">
-<span class="wm">KLOOSTERMAN</span>
-<div class="hnav"><a class="navlink" href="../bedrijf/kloosterman/index.html">Alle vacatures bij Kloosterman</a><a class="btn small" href="#formulier">Solliciteer direct</a></div>
-</div></header>
-<div class="hero" id="top"><div class="wrap"><div class="grid">
-<div><span class="crumb rv in"><span class="dot"></span>Vacature open</span>
-<h1 class="rv in">Wij zoeken een <em>kraanmachinist!<svg viewBox="0 0 200 12" preserveAspectRatio="none"><path d="M2 9 Q 60 2 118 7 T 198 5" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" opacity=".55"/></svg></em></h1>
-<ul class="perks rv in d2"><li><span class="ic">🌍</span><span class="tx">Je komt echt <strong>overal in Zeeland</strong></span></li><li><span class="ic">🛞</span><span class="tx">De <strong>mooiste machines</strong> onder jouw verantwoording</span></li><li><span class="ic">😊</span><span class="tx">Wij hebben echt een <strong>topteam</strong></span></li></ul><div class="cta-row rv in d3"><a class="btn" href="#formulier">Solliciteren <span class="ar">→</span></a> </div></div>
-<div class="pcomp rv in d2"><div class="frame"></div><div class="photo"><img src="https://static.wixstatic.com/media/dafd0f_68d3d94612664b8db712a6ae71c071de~mv2.jpg" alt="Werken bij Kloosterman" onerror="this.closest('.pcomp').style.display='none'"></div></div>
-</div></div></div>
-<div class="sep"><svg viewBox="0 0 1200 72" preserveAspectRatio="none"><path d="M0,26 C400,80 800,4 1200,42 L1200,72 L0,72 Z" fill="#f5f6f2"/></svg></div><section class="blk alt pad" style="background:#f5f6f2"><div class="wrap"><div class="twocol"><div class="txt rv"><span class="kick">Kloosterman</span><h2 class="t">Jouw functie</h2><p class="lead">Werken op de mooiste <strong>graafmachines</strong>? Als kraanmachinist bij Kloosterman ga jij aan de slag op onze prachtigste projecten.</p><p class="lead">Van werken aan de weg tot het versterken van <strong>zeedijken</strong>: jij pakt het op.</p></div><div class="photostack rv d2"><img src="https://static.wixstatic.com/media/dafd0f_63475df0be994563ac17beefdce7a3c8~mv2.jpg" alt="Kloosterman" loading="lazy" onerror="this.parentNode.style.display='none'"></div></div></div></section>
-<div class="sep"><svg viewBox="0 0 1200 72" preserveAspectRatio="none"><path d="M0,72 Q600,2 1200,72 Z" fill="#ffffff"/></svg></div><section class="blk pad" style="background:#ffffff"><div class="wrap"><div class="twocol flip"><div class="txt rv"><span class="kick">Kloosterman</span><h2 class="t">Hoe is het om bij ons te werken?</h2><p class="lead">We hebben een <strong>topteam</strong> dat altijd voor elkaar klaarstaat. En wie kunnen daar beter over vertellen dan je <strong>toekomstige collega&#x27;s</strong>!</p><div style="margin-top:26px"><a class="btn" href="#formulier">Solliciteren <span class="ar">→</span></a> </div></div><div class="photostack rv d2"><img src="https://static.wixstatic.com/media/dafd0f_30164f78b0c04f7c9dbaef635d79f209~mv2.jpg" alt="Kloosterman" loading="lazy" onerror="this.parentNode.style.display='none'"></div></div></div></section>
-<div class="sep"><svg viewBox="0 0 1200 72" preserveAspectRatio="none"><path d="M0,26 C400,80 800,4 1200,42 L1200,72 L0,72 Z" fill="#f5f6f2"/></svg></div><section class="blk alt pad" style="background:#f5f6f2"><div class="wrap"><div class="rv" style="max-width:640px"><span class="kick">Kloosterman</span><h2 class="t">🌟 Wat bieden wij?</h2></div><div class="cards"><div class="card rv d0"><span class="em">💪</span><b>Werken met de <strong>mooiste machines</strong></b></div><div class="card rv d1"><span class="em">🚀</span><b>De mooiste projecten door <strong>heel Zeeland</strong>!</b></div><div class="card rv d2"><span class="em">🤝</span><b>Een <strong>topteam</strong></b></div><div class="card rv d3"><span class="em">⭐</span><b>Een <strong>goed salaris</strong></b></div></div></div></section>
-<div class="sep"><svg viewBox="0 0 1200 72" preserveAspectRatio="none"><path d="M0,72 Q600,2 1200,72 Z" fill="#ffffff"/></svg></div><section class="blk pad" style="background:#ffffff"><div class="wrap"><div class="twocol flip"><div class="txt rv"><span class="kick">Kloosterman</span><h2 class="t">🌱 Wat heb je nodig?</h2><div class="checks"><div class="check rv d0"><span class="ic">✓</span><span><strong>Rijbewijs B &amp; T</strong></span></div><div class="check rv d1"><span class="ic">✓</span><span>Een <strong>flexibele</strong> instelling</span></div><div class="check rv d2"><span class="ic">✓</span><span><strong>Machinegevoel</strong></span></div><div class="check rv d3"><span class="ic">✓</span><span><strong>Ervaring</strong> is mooi, maar niet noodzakelijk</span></div></div><div style="margin-top:26px"><a class="btn" href="#formulier">Meer informatie <span class="ar">→</span></a> </div></div><div class="photostack rv d2"><img src="https://static.wixstatic.com/media/dafd0f_ae9ec3b9c5c243f1ab6db123ddc5bf6c~mv2.jpg" alt="Kloosterman" loading="lazy" onerror="this.parentNode.style.display='none'"></div></div></div></section>
-<section class="videoband"><div class="wrap"><div class="vidgrid" style="grid-template-columns:1fr 1fr">
-<div class="rv"><span class="kick">Kloosterman</span><h2 class="t">🚛 Over Kloosterman</h2><p class="lead"><strong>108 jaar</strong>, zo lang bestaan we al. En we willen nog zeker 100 jaar door.</p><p class="lead">Of het nu gaat om <strong>grondverzet</strong> of <strong>transport</strong>, wij zijn gedreven door liefde voor het vak. We zijn trots op de prachtige projecten die we mogen doen.</p><p class="lead">Machines alleen maken een bedrijf niet. Het draait uiteindelijk om <strong>onze mensen</strong>; hun inzet, motivatie en leergierigheid zorgen voor de beste eindresultaten voor onze opdrachtgevers.</p><p class="lead">Ben jij het <strong>volgende lid</strong> van ons team?</p>
-<div style="margin-top:24px"><a class="btn" href="#formulier">Direct solliciteren <span class="ar">→</span></a> </div></div>
-<div class="photostack rv d2"><img src="https://static.wixstatic.com/media/dafd0f_ae9ec3b9c5c243f1ab6db123ddc5bf6c~mv2.jpg" alt="Kloosterman" loading="lazy" onerror="this.parentNode.style.display='none'"></div>
-</div></div></section>
-<section class="apply" id="solliciteer"><div class="wrap"><div class="grid">
-<div class="rv"><span class="kick">Solliciteren</span><h2 class="t">Ook enthousiast geworden?</h2><p class="lead">Dan horen we <strong>graag</strong> van je!</p><p class="lead">Laat hieronder je gegevens achter, dan nemen we <strong>binnenkort contact</strong> op. Wie weet zit jij straks op een van onze mooiste machines!</p>
-<ul class="mini"><li><span class="ic">📞</span>Je hoort snel van Kloosterman</li>
-<li><span class="ic">📄</span>Geen cv nodig, jouw inzet telt</li></ul></div>
-<div class="fcard rv d2" id="formulier">
-<h3>Solliciteer bij Kloosterman</h3>
-<div class="fsub">Naam en nummer is genoeg, de rest komt later.</div>
-<form onsubmit="return sendApp(this)">
-<label>Naam*</label><input name="naam" required placeholder="Voor- en achternaam">
-<label>Telefoonnummer*</label><input name="tel" required placeholder="06 - 12 34 56 78">
-<label>E-mailadres*</label><input type="email" name="email" required placeholder="jij@voorbeeld.nl">
-<label>Vertel kort iets over jezelf (optioneel)</label><textarea name="msg" rows="3" placeholder="Bijv. je ervaring of wanneer je kunt beginnen"></textarea>
-<button class="btn" type="submit">Verstuur sollicitatie <span class="ar">→</span></button>
-<div class="note">Kloosterman neemt zelf contact met je op.</div>
-</form>
-<div class="formok" id="formok">✅ Bedankt! Je sollicitatie is verstuurd. Kloosterman belt je snel!</div>
+<a class="wm" href="index.html">KOM WERKEN <em>BIJ.</em></a>
+<nav class="main">
+<a href="index.html#vacatures">Vacatures</a>
+<a href="over-ons/index.html">Over ons</a>
+<a class="btn small" href="index.html#vacatures">Bekijk vacatures</a>
+</nav></div></header>
+
+<div class="hero"><div class="wrap">
+<span class="kick rv in">Vacatures in Zuidwest-Nederland</span>
+<h1 class="rv in">Jouw volgende baan vind je <em>dichtbij huis<svg viewBox="0 0 200 12" preserveAspectRatio="none"><path d="M2 9 Q 60 2 118 7 T 198 5" fill="none" stroke="#ff6b35" stroke-width="5" stroke-linecap="round"/></svg></em>.</h1>
+<p class="lead rv in d1">Ontdek openstaande vacatures bij sterke werkgevers uit de regio en solliciteer direct bij het bedrijf zelf.</p>
+<div class="rv in d2"><a class="btn" href="#vacatures">Bekijk alle vacatures <span class="ar">→</span></a></div>
+<div class="stats rv in d3">
+<div><b>75</b><span>openstaande vacatures</span></div>
+<div><b>35</b><span>werkgevers uit de regio</span></div>
+<div><b>100%</b><span>rechtstreeks bij het bedrijf</span></div>
 </div>
-<script>
-function sendApp(f){
-var b='Pagina: https://www.komwerkenbij.org/kloosterman-kraanmachinist%0D%0ANaam: '+encodeURIComponent(f.naam.value)+'%0D%0ATelefoon: '+encodeURIComponent(f.tel.value)+'%0D%0AE-mail: '+encodeURIComponent(f.email.value)+'%0D%0A%0D%0A'+encodeURIComponent(f.msg.value);
-window.location.href='mailto:info@komwerkenbij.org?subject='+encodeURIComponent('Sollicitatie via Vacature Kraanmachinist - Solliciteer Nu')+'&body='+b;
-setTimeout(function(){document.getElementById('formok').style.display='block';f.style.display='none';},900);
-return false;}
-</script>
-</div></div></section>
-<footer><div class="wrap"><span>© Wolf</span><span>Kloosterman</span></div></footer>
-<div class="stickycta"><a class="btn" href="#formulier">Solliciteer direct <span class="ar">→</span></a></div>
+</div></div>
+
+<section class="pad" id="vacatures"><div class="wrap">
+<span class="kick rv">Vacature-overzicht</span>
+<h2 class="t rv">Vind jouw vacature</h2>
+<p class="rv" style="color:var(--muted);max-width:560px">Zoek op functie, bedrijf of plaats. Elke vacature opent de eigen pagina van het bedrijf.</p>
+<div class="filterbar rv"><input type="search" id="q" placeholder="Zoek op functie, bedrijf of plaats…" aria-label="Zoeken"></div>
+<div class="chips rv"><button class="chip" data-tag="Administratief">Administratief</button><button class="chip" data-tag="Advies">Advies</button><button class="chip" data-tag="Ambacht">Ambacht</button><button class="chip" data-tag="Bouw">Bouw</button><button class="chip" data-tag="Commercieel">Commercieel</button><button class="chip" data-tag="Groen">Groen</button><button class="chip" data-tag="ICT">ICT</button><button class="chip" data-tag="Infra">Infra</button><button class="chip" data-tag="Inkoop">Inkoop</button><button class="chip" data-tag="Koeltechniek">Koeltechniek</button><button class="chip" data-tag="Leerwerkplek">Leerwerkplek</button><button class="chip" data-tag="Logistiek">Logistiek</button><button class="chip" data-tag="Maritiem">Maritiem</button><button class="chip" data-tag="Marketing">Marketing</button><button class="chip" data-tag="Milieu">Milieu</button><button class="chip" data-tag="Planning">Planning</button><button class="chip" data-tag="Service">Service</button><button class="chip" data-tag="Techniek">Techniek</button><button class="chip" data-tag="Transport">Transport</button><button class="chip" data-tag="Voeding">Voeding</button><button class="chip" data-tag="Wegenbouw">Wegenbouw</button></div>
+<div class="count-note" id="cnt"></div>
+<div class="grid3"><div class="vcard rv" data-search="bakker bakker bouman voeding ambacht" data-tags="Voeding|Ambacht">
+<a class="cover" href="bakker-bouman/index.html" aria-label="Bakker bij Bakker Bouman"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#48271a,#2c1810)">B<img src="https://static.wixstatic.com/media/07c77c_9d9e8a882d1148a09dd221122041b34b~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Bakker Bouman</span></div>
+<div class="body"><div class="tags"><span class="tag">Voeding</span><span class="tag">Ambacht</span></div>
+<h3>Bakker</h3><div class="loc">📍 Regio Zuidwest-Nederland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="leerling monteur bakker machinefabriek zeeland techniek maritiem leerwerkplek" data-tags="Techniek|Maritiem|Leerwerkplek">
+<a class="cover" href="bakker-machinefabriek-leerling-monteur/index.html" aria-label="Leerling Monteur bij Bakker Machinefabriek"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#004278,#00284a)">B<img src="https://static.wixstatic.com/media/e52e10_7dc8ad34c153473097b85cf810f2dcec~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Bakker Machinefabriek</span></div>
+<div class="body"><div class="tags"><span class="tag">Techniek</span><span class="tag">Maritiem</span><span class="tag">Leerwerkplek</span></div>
+<h3>Leerling Monteur</h3><div class="loc">📍 Zeeland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="machinebouwer bakker machinefabriek zeeland techniek maritiem" data-tags="Techniek|Maritiem">
+<a class="cover" href="bakker-machinefabriek-machinebouwer/index.html" aria-label="Machinebouwer bij Bakker Machinefabriek"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#004278,#00284a)">B<img src="https://static.wixstatic.com/media/e52e10_7837c2f798e14864b0a766ff9bce0f41~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Bakker Machinefabriek</span></div>
+<div class="body"><div class="tags"><span class="tag">Techniek</span><span class="tag">Maritiem</span></div>
+<h3>Machinebouwer</h3><div class="loc">📍 Zeeland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="allround storingsmonteur coroos techniek voeding" data-tags="Techniek|Voeding">
+<a class="cover" href="coroos-1/index.html" aria-label="Allround Storingsmonteur bij Coroos"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#357830,#204a1d)">C<img src="https://static.wixstatic.com/media/07c77c_eebac25d918a45fea89d4b9e24654225~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Coroos</span></div>
+<div class="body"><div class="tags"><span class="tag">Techniek</span><span class="tag">Voeding</span></div>
+<h3>Allround Storingsmonteur</h3><div class="loc">📍 Regio Zuidwest-Nederland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="werkvoorbereider damen shiprepair vlissingen vlissingen techniek" data-tags="Techniek">
+<a class="cover" href="damen/index.html" aria-label="Werkvoorbereider bij Damen Shiprepair Vlissingen"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#2546b1,#162b6d)">D<img src="https://static.wixstatic.com/media/dafd0f_b947a114dbd04eda974cf22ca3394b01~mv2.webp" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Damen Shiprepair Vlissingen</span></div>
+<div class="body"><div class="tags"><span class="tag">Techniek</span></div>
+<h3>Werkvoorbereider</h3><div class="loc">📍 Vlissingen</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="procesmanager de muynck zeeland techniek advies" data-tags="Techniek|Advies">
+<a class="cover" href="de-muynck-procesmanager/index.html" aria-label="Procesmanager bij De Muynck"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#e20513,#8c030b)">D<img src="https://static.wixstatic.com/media/a89b1c_0d9686ca2232404696f2311842c998ec~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">De Muynck</span></div>
+<div class="body"><div class="tags"><span class="tag">Techniek</span><span class="tag">Advies</span></div>
+<h3>Procesmanager</h3><div class="loc">📍 Zeeland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="schadehersteller/plaatwerker de muynck techniek" data-tags="Techniek">
+<a class="cover" href="de-muynck-schadehersteller-plaatwerker/index.html" aria-label="Schadehersteller/Plaatwerker bij De Muynck"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#e20513,#8c030b)">D
+<span class="cbadge">De Muynck</span></div>
+<div class="body"><div class="tags"><span class="tag">Techniek</span></div>
+<h3>Schadehersteller/Plaatwerker</h3><div class="loc">📍 Regio Zuidwest-Nederland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="chauffeur knijperwagen de regt etten-leur transport groen" data-tags="Transport|Groen">
+<a class="cover" href="de-regt-knijperwagen/index.html" aria-label="Chauffeur knijperwagen bij De Regt"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#114b2d,#0a2e1b)">D<img src="https://static.wixstatic.com/media/e52e10_57e09ec7448e43ac804af385a5a9c6db" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">De Regt</span></div>
+<div class="body"><div class="tags"><span class="tag">Transport</span><span class="tag">Groen</span></div>
+<h3>Chauffeur knijperwagen</h3><div class="loc">📍 Etten-Leur</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="kraanmachinist de regt etten-leur techniek bouw transport" data-tags="Techniek|Bouw|Transport">
+<a class="cover" href="de-regt-kraanmachinist/index.html" aria-label="Kraanmachinist bij De Regt"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#114b2d,#0a2e1b)">D<img src="https://static.wixstatic.com/media/e52e10_68c06dc96a93407482c5729e07de6da1~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">De Regt</span></div>
+<div class="body"><div class="tags"><span class="tag">Techniek</span><span class="tag">Bouw</span><span class="tag">Transport</span></div>
+<h3>Kraanmachinist</h3><div class="loc">📍 Etten-Leur</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="monteur de regt etten-leur techniek transport" data-tags="Techniek|Transport">
+<a class="cover" href="de-regt-monteur/index.html" aria-label="Monteur bij De Regt"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#114b2d,#0a2e1b)">D<img src="https://static.wixstatic.com/media/e52e10_68c06dc96a93407482c5729e07de6da1" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">De Regt</span></div>
+<div class="body"><div class="tags"><span class="tag">Techniek</span><span class="tag">Transport</span></div>
+<h3>Monteur</h3><div class="loc">📍 Etten-Leur</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="calculator / werkvoorbereider dick klok heenvliet groen advies" data-tags="Groen|Advies">
+<a class="cover" href="calculator/index.html" aria-label="Calculator / Werkvoorbereider bij Dick Klok"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#004e26,#003017)">D<img src="https://static.wixstatic.com/media/e52e10_deb5554f400f47eba6d93f145cfac752~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Dick Klok</span></div>
+<div class="body"><div class="tags"><span class="tag">Groen</span><span class="tag">Advies</span></div>
+<h3>Calculator / Werkvoorbereider</h3><div class="loc">📍 Heenvliet</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="hovenier dick klok heenvliet groen" data-tags="Groen">
+<a class="cover" href="hovenier/index.html" aria-label="Hovenier bij Dick Klok"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#004e26,#003017)">D<img src="https://static.wixstatic.com/media/e52e10_3dc88c1f22394079af826600c54777ec~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Dick Klok</span></div>
+<div class="body"><div class="tags"><span class="tag">Groen</span></div>
+<h3>Hovenier</h3><div class="loc">📍 Heenvliet</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="kraanmachinist dick klok heenvliet groen techniek" data-tags="Groen|Techniek">
+<a class="cover" href="kraanmachinist/index.html" aria-label="Kraanmachinist bij Dick Klok"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#004e26,#003017)">D<img src="https://static.wixstatic.com/media/e52e10_c8aa870a5a3a4dc7973d65647a563e7a~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Dick Klok</span></div>
+<div class="body"><div class="tags"><span class="tag">Groen</span><span class="tag">Techniek</span></div>
+<h3>Kraanmachinist</h3><div class="loc">📍 Heenvliet</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="kantbankmedewerker (kanter/zetter) dumaco techniek" data-tags="Techniek">
+<a class="cover" href="dumaco/index.html" aria-label="Kantbankmedewerker (Kanter/Zetter) bij Dumaco"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#242424,#161616)">D<img src="https://static.wixstatic.com/media/e52e10_62f500accc494dd2b11bddaecdf83f95~mv2.webp" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Dumaco</span></div>
+<div class="body"><div class="tags"><span class="tag">Techniek</span></div>
+<h3>Kantbankmedewerker (Kanter/Zetter)</h3><div class="loc">📍 Regio Zuidwest-Nederland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="assemblagemonteur verkeerssystemen ebo van weel rhoon (onder rotterdam) techniek" data-tags="Techniek">
+<a class="cover" href="ebo-van-weel/assamblage-monteur/index.html" aria-label="Assemblagemonteur verkeerssystemen bij EBO van Weel"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#5c6e4a,#39442d)">E
+<span class="cbadge">EBO van Weel</span></div>
+<div class="body"><div class="tags"><span class="tag">Techniek</span></div>
+<h3>Assemblagemonteur verkeerssystemen</h3><div class="loc">📍 Rhoon (onder Rotterdam)</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="carrosseriebouwer ebo van weel rhoon (onder rotterdam) techniek transport" data-tags="Techniek|Transport">
+<a class="cover" href="ebo-van-weel/carroseriebouwer/index.html" aria-label="Carrosseriebouwer bij EBO van Weel"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#5c6e4a,#39442d)">E<img src="https://static.wixstatic.com/media/07c77c_660e304be8b045038d6d24dab376b148~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">EBO van Weel</span></div>
+<div class="body"><div class="tags"><span class="tag">Techniek</span><span class="tag">Transport</span></div>
+<h3>Carrosseriebouwer</h3><div class="loc">📍 Rhoon (onder Rotterdam)</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="servicemonteur ebo van weel rhoon (vlak onder rotterdam) techniek" data-tags="Techniek">
+<a class="cover" href="ebo-van-weel/servicemonteur/index.html" aria-label="Servicemonteur bij EBO van Weel"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#5c6e4a,#39442d)">E<img src="https://static.wixstatic.com/media/07c77c_1cd6bf464fb045158834fcf06dd0f573~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">EBO van Weel</span></div>
+<div class="body"><div class="tags"><span class="tag">Techniek</span></div>
+<h3>Servicemonteur</h3><div class="loc">📍 Rhoon (vlak onder Rotterdam)</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="inpakoperator farmpack voeding logistiek" data-tags="Voeding|Logistiek">
+<a class="cover" href="farmpack-inpakoperator/index.html" aria-label="Inpakoperator bij Farmpack"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#377c2b,#224c1a)">F<img src="https://static.wixstatic.com/media/dafd0f_e7d7c8c2f3074f2b8e64ded5b1392ce4~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Farmpack</span></div>
+<div class="body"><div class="tags"><span class="tag">Voeding</span><span class="tag">Logistiek</span></div>
+<h3>Inpakoperator</h3><div class="loc">📍 Regio Zuidwest-Nederland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="monteur farmpack techniek voeding" data-tags="Techniek|Voeding">
+<a class="cover" href="farmpack-monteur/index.html" aria-label="Monteur bij Farmpack"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#377c2b,#224c1a)">F<img src="https://static.wixstatic.com/media/dafd0f_369812294fa54950b8b5cdbda6ed83e7~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Farmpack</span></div>
+<div class="body"><div class="tags"><span class="tag">Techniek</span><span class="tag">Voeding</span></div>
+<h3>Monteur</h3><div class="loc">📍 Regio Zuidwest-Nederland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="procesoperator farmpack voeding techniek" data-tags="Voeding|Techniek">
+<a class="cover" href="farmpack-procesoperator/index.html" aria-label="Procesoperator bij Farmpack"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#377c2b,#224c1a)">F<img src="https://static.wixstatic.com/media/e52e10_a2adc01e9eae41ecb5cf750b688dbcac" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Farmpack</span></div>
+<div class="body"><div class="tags"><span class="tag">Voeding</span><span class="tag">Techniek</span></div>
+<h3>Procesoperator</h3><div class="loc">📍 Regio Zuidwest-Nederland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="projectleider fraanje zeeland bouw" data-tags="Bouw">
+<a class="cover" href="fraanje/projectleider/index.html" aria-label="Projectleider bij Fraanje"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#ffd601,#9e8400)">F<img src="https://static.wixstatic.com/media/07c77c_c2df707abf4e4036a011ce7073553a5e~mv2.png" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Fraanje</span></div>
+<div class="body"><div class="tags"><span class="tag">Bouw</span></div>
+<h3>Projectleider</h3><div class="loc">📍 Zeeland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="timmerman fraanje zeeland bouw" data-tags="Bouw">
+<a class="cover" href="fraanje/timmerman/index.html" aria-label="Timmerman bij Fraanje"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#ffd601,#9e8400)">F<img src="https://static.wixstatic.com/media/07c77c_fdab50577b044b44a168368a2d473af8~mv2.png" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Fraanje</span></div>
+<div class="body"><div class="tags"><span class="tag">Bouw</span></div>
+<h3>Timmerman</h3><div class="loc">📍 Zeeland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="werkvoorbereider fraanje zeeland bouw" data-tags="Bouw">
+<a class="cover" href="fraanje/werkvoorbereider/index.html" aria-label="Werkvoorbereider bij Fraanje"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#ffd601,#9e8400)">F<img src="https://static.wixstatic.com/media/07c77c_3e989ab18f11471988297b722641c718~mv2.png" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Fraanje</span></div>
+<div class="body"><div class="tags"><span class="tag">Bouw</span></div>
+<h3>Werkvoorbereider</h3><div class="loc">📍 Zeeland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="kraanmachinist mobiele kraan gebr. van der poel bouw techniek" data-tags="Bouw|Techniek">
+<a class="cover" href="gebrvdpoel-kraanmachinist/index.html" aria-label="Kraanmachinist Mobiele Kraan bij Gebr. van der Poel"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#c2101b,#780910)">G<img src="https://static.wixstatic.com/media/256006_97c07cdbfce240a08fe57c4693d1eb92~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Gebr. van der Poel</span></div>
+<div class="body"><div class="tags"><span class="tag">Bouw</span><span class="tag">Techniek</span></div>
+<h3>Kraanmachinist Mobiele Kraan</h3><div class="loc">📍 Regio Zuidwest-Nederland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="medewerker gww gebr. van der poel bouw" data-tags="Bouw">
+<a class="cover" href="gebrvdpoel-medewerkergww/index.html" aria-label="Medewerker GWW bij Gebr. van der Poel"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#c2101b,#780910)">G<img src="https://static.wixstatic.com/media/256006_bc1cdcd0f85c4d78a8d7d3006434e536~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Gebr. van der Poel</span></div>
+<div class="body"><div class="tags"><span class="tag">Bouw</span></div>
+<h3>Medewerker GWW</h3><div class="loc">📍 Regio Zuidwest-Nederland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="meewerkend voorman gww gebr. van der poel bouw" data-tags="Bouw">
+<a class="cover" href="gebrvdpoel-meewerkendvoorman-gww/index.html" aria-label="Meewerkend Voorman GWW bij Gebr. van der Poel"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#c2101b,#780910)">G<img src="https://static.wixstatic.com/media/256006_19b32f1717204b5b827232d02d3fd405~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Gebr. van der Poel</span></div>
+<div class="body"><div class="tags"><span class="tag">Bouw</span></div>
+<h3>Meewerkend Voorman GWW</h3><div class="loc">📍 Regio Zuidwest-Nederland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="(leerling) service technicus koeltechniek glerum koel- en klimaattechniek goes techniek" data-tags="Techniek">
+<a class="cover" href="glerum/index.html" aria-label="(Leerling) Service Technicus Koeltechniek bij Glerum Koel- en Klimaattechniek"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#0099cb,#005e7d)">G<img src="https://static.wixstatic.com/media/dafd0f_20015f786a504c90943a2b81d878040c~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Glerum Koel- en Klimaattechniek</span></div>
+<div class="body"><div class="tags"><span class="tag">Techniek</span></div>
+<h3>(Leerling) Service Technicus Koeltechniek</h3><div class="loc">📍 Goes</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="leerling koelmonteur glerum koel- en klimaattechniek goes techniek" data-tags="Techniek">
+<a class="cover" href="glerum-leerling/index.html" aria-label="Leerling Koelmonteur bij Glerum Koel- en Klimaattechniek"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#0099cb,#005e7d)">G<img src="https://static.wixstatic.com/media/dafd0f_20015f786a504c90943a2b81d878040c~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Glerum Koel- en Klimaattechniek</span></div>
+<div class="body"><div class="tags"><span class="tag">Techniek</span></div>
+<h3>Leerling Koelmonteur</h3><div class="loc">📍 Goes</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="koeltechnisch installatiemonteur govers techniek koeltechniek" data-tags="Techniek|Koeltechniek">
+<a class="cover" href="govers/installatiemonteur/index.html" aria-label="Koeltechnisch Installatiemonteur bij Govers"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#002c5b,#001b38)">G<img src="https://static.wixstatic.com/media/e52e10_a2d37f705deb49108b97261d619b87d5~mv2.png" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Govers</span></div>
+<div class="body"><div class="tags"><span class="tag">Techniek</span><span class="tag">Koeltechniek</span></div>
+<h3>Koeltechnisch Installatiemonteur</h3><div class="loc">📍 Regio Zuidwest-Nederland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="koeltechnisch servicemonteur govers techniek koeltechniek service" data-tags="Techniek|Koeltechniek|Service">
+<a class="cover" href="govers/servicemonteur-1/index.html" aria-label="Koeltechnisch Servicemonteur bij Govers"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#002c5b,#001b38)">G<img src="https://static.wixstatic.com/media/e52e10_a2d37f705deb49108b97261d619b87d5~mv2.png" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Govers</span></div>
+<div class="body"><div class="tags"><span class="tag">Techniek</span><span class="tag">Koeltechniek</span><span class="tag">Service</span></div>
+<h3>Koeltechnisch Servicemonteur</h3><div class="loc">📍 Regio Zuidwest-Nederland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="service coördinator govers techniek planning administratief" data-tags="Techniek|Planning|Administratief">
+<a class="cover" href="govers/service-coördinator/index.html" aria-label="Service Coördinator bij Govers"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#002c5b,#001b38)">G<img src="https://static.wixstatic.com/media/e52e10_a2d37f705deb49108b97261d619b87d5~mv2.png" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Govers</span></div>
+<div class="body"><div class="tags"><span class="tag">Techniek</span><span class="tag">Planning</span><span class="tag">Administratief</span></div>
+<h3>Service Coördinator</h3><div class="loc">📍 Regio Zuidwest-Nederland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="grondwerker gunter groep bouw groen" data-tags="Bouw|Groen">
+<a class="cover" href="gunter-groep-grondwerker/index.html" aria-label="Grondwerker bij Gunter Groep"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#23a003,#156301)">G<img src="https://static.wixstatic.com/media/256006_66ecc715fdb74ea3b4467fd98bd9fcbc~mv2.png" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Gunter Groep</span></div>
+<div class="body"><div class="tags"><span class="tag">Bouw</span><span class="tag">Groen</span></div>
+<h3>Grondwerker</h3><div class="loc">📍 Regio Zuidwest-Nederland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="kraanmachinist gunter groep bouw techniek" data-tags="Bouw|Techniek">
+<a class="cover" href="gunter-groep-kraanmachinist/index.html" aria-label="Kraanmachinist bij Gunter Groep"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#23a003,#156301)">G<img src="https://static.wixstatic.com/media/07c77c_251e8c9a97d24412a7447740711a9382~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Gunter Groep</span></div>
+<div class="body"><div class="tags"><span class="tag">Bouw</span><span class="tag">Techniek</span></div>
+<h3>Kraanmachinist</h3><div class="loc">📍 Regio Zuidwest-Nederland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="stratenmaker gunter groep bouw" data-tags="Bouw">
+<a class="cover" href="gunter-groep-stratenmaker/index.html" aria-label="Stratenmaker bij Gunter Groep"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#23a003,#156301)">G
+<span class="cbadge">Gunter Groep</span></div>
+<div class="body"><div class="tags"><span class="tag">Bouw</span></div>
+<h3>Stratenmaker</h3><div class="loc">📍 Regio Zuidwest-Nederland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="servicemonteur buitendienst hdw techniek" data-tags="Techniek">
+<a class="cover" href="hdw/index.html" aria-label="Servicemonteur Buitendienst bij HDW"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#1b1b1b,#101010)">H<img src="https://static.wixstatic.com/media/dafd0f_4b55eecef4764a078f9f0106b273cd02~mv2.jpeg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">HDW</span></div>
+<div class="body"><div class="tags"><span class="tag">Techniek</span></div>
+<h3>Servicemonteur Buitendienst</h3><div class="loc">📍 Regio Zuidwest-Nederland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="elektromonteur hydrauvision zeeland techniek" data-tags="Techniek">
+<a class="cover" href="hydrauvision-1/index.html" aria-label="Elektromonteur bij Hydrauvision"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#0053a1,#003363)">H<img src="https://static.wixstatic.com/media/e52e10_b3d423f5a481488bb65dfe3b93d2b5ae" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Hydrauvision</span></div>
+<div class="body"><div class="tags"><span class="tag">Techniek</span></div>
+<h3>Elektromonteur</h3><div class="loc">📍 Zeeland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="allround medewerker kloosterman transport commercieel" data-tags="Transport|Commercieel">
+<a class="cover" href="kloosterman-medewerker/index.html" aria-label="Allround medewerker bij Kloosterman"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#fddf08,#9c8a04)">K<img src="https://static.wixstatic.com/media/dafd0f_bef9204d7117461d9d42c49f2643b3c2~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Kloosterman</span></div>
+<div class="body"><div class="tags"><span class="tag">Transport</span><span class="tag">Commercieel</span></div>
+<h3>Allround medewerker</h3><div class="loc">📍 Regio Zuidwest-Nederland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="allround monteur kloosterman zeeland techniek transport" data-tags="Techniek|Transport">
+<a class="cover" href="kloosterman-monteur/index.html" aria-label="Allround monteur bij Kloosterman"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#fddf08,#9c8a04)">K<img src="https://static.wixstatic.com/media/dafd0f_87cdb6a5cc9d4020852d478e7818559d~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Kloosterman</span></div>
+<div class="body"><div class="tags"><span class="tag">Techniek</span><span class="tag">Transport</span></div>
+<h3>Allround monteur</h3><div class="loc">📍 Zeeland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="kraanmachinist kloosterman zeeland techniek bouw transport" data-tags="Techniek|Bouw|Transport">
+<a class="cover" href="kloosterman-kraanmachinist/index.html" aria-label="Kraanmachinist bij Kloosterman"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#fddf08,#9c8a04)">K<img src="https://static.wixstatic.com/media/dafd0f_68d3d94612664b8db712a6ae71c071de~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Kloosterman</span></div>
+<div class="body"><div class="tags"><span class="tag">Techniek</span><span class="tag">Bouw</span><span class="tag">Transport</span></div>
+<h3>Kraanmachinist</h3><div class="loc">📍 Zeeland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="trekkerchauffeur kloosterman zeeland transport groen" data-tags="Transport|Groen">
+<a class="cover" href="kloosterman-trekkerchauffeur/index.html" aria-label="Trekkerchauffeur bij Kloosterman"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#fddf08,#9c8a04)">K<img src="https://static.wixstatic.com/media/dafd0f_f653a17b0daf49c6af571319129f03f4~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Kloosterman</span></div>
+<div class="body"><div class="tags"><span class="tag">Transport</span><span class="tag">Groen</span></div>
+<h3>Trekkerchauffeur</h3><div class="loc">📍 Zeeland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="grondwerker (bbl, vakdiploma niveau 2) kws heel nederland bouw infra" data-tags="Bouw|Infra">
+<a class="cover" href="sligro-1-1-1/index.html" aria-label="Grondwerker (BBL, vakdiploma niveau 2) bij KWS"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#242424,#161616)">K<img src="https://static.wixstatic.com/media/e52e10_57115fed4a9b46689e85e83dde0d9d3c~mv2.png" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">KWS</span></div>
+<div class="body"><div class="tags"><span class="tag">Bouw</span><span class="tag">Infra</span></div>
+<h3>Grondwerker (BBL, vakdiploma niveau 2)</h3><div class="loc">📍 Heel Nederland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="medewerker quality assurance maître zeeland voeding" data-tags="Voeding">
+<a class="cover" href="maitre-1/index.html" aria-label="Medewerker Quality Assurance bij Maître"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#006e2c,#00441b)">M<img src="https://static.wixstatic.com/media/e52e10_e8e40a563f0e4ea5bcaaab24f0f8bacb" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Maître</span></div>
+<div class="body"><div class="tags"><span class="tag">Voeding</span></div>
+<h3>Medewerker Quality Assurance</h3><div class="loc">📍 Zeeland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="inkoper (interim) mccain voeding commercieel" data-tags="Voeding|Commercieel">
+<a class="cover" href="mccain/index.html" aria-label="Inkoper (interim) bij McCain"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#f5d700,#978500)">M<img src="https://static.wixstatic.com/media/e52e10_7a38b5bcfdb146719ec5487980173142~mv2.png" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">McCain</span></div>
+<div class="body"><div class="tags"><span class="tag">Voeding</span><span class="tag">Commercieel</span></div>
+<h3>Inkoper (interim)</h3><div class="loc">📍 Regio Zuidwest-Nederland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="secundair monteur hoogspanning omexom nederland techniek" data-tags="Techniek">
+<a class="cover" href="secundair-monteur-hoogspanning/index.html" aria-label="Secundair monteur hoogspanning bij Omexom"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#0072ce,#00467f)">O<img src="https://static.wixstatic.com/media/e52e10_e8e49af065ba4bfcb12e1a4fcb795860~mv2.png" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Omexom</span></div>
+<div class="body"><div class="tags"><span class="tag">Techniek</span></div>
+<h3>Secundair monteur hoogspanning</h3><div class="loc">📍 Nederland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="allround timmerman peeman bouw nieuwe-tonge (goeree-overflakkee) bouw" data-tags="Bouw">
+<a class="cover" href="peeman-timmerman/index.html" aria-label="Allround Timmerman bij Peeman Bouw"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#f07e04,#944e02)">P<img src="https://static.wixstatic.com/media/07c77c_f72ac94b001a4f8383f5076eb9715ac1~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Peeman Bouw</span></div>
+<div class="body"><div class="tags"><span class="tag">Bouw</span></div>
+<h3>Allround Timmerman</h3><div class="loc">📍 Nieuwe-Tonge (Goeree-Overflakkee)</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="calculator / werkvoorbereider peeman bouw nieuwe-tonge (goeree-overflakkee) bouw advies" data-tags="Bouw|Advies">
+<a class="cover" href="peeman-calculator/index.html" aria-label="Calculator / Werkvoorbereider bij Peeman Bouw"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#f07e04,#944e02)">P<img src="https://static.wixstatic.com/media/07c77c_3b2018c3151242b2b0a936911506a53f~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Peeman Bouw</span></div>
+<div class="body"><div class="tags"><span class="tag">Bouw</span><span class="tag">Advies</span></div>
+<h3>Calculator / Werkvoorbereider</h3><div class="loc">📍 Nieuwe-Tonge (Goeree-Overflakkee)</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="adviseur akoestiek s&amp;w advies bouw" data-tags="Advies|Bouw">
+<a class="cover" href="s-w-adviseur-akoestiek/index.html" aria-label="Adviseur Akoestiek bij S&amp;W"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#2c2c2c,#1b1b1b)">S<img src="https://static.wixstatic.com/media/07c77c_6923132b4e9645e792e35b93e58a3de9~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">S&amp;W</span></div>
+<div class="body"><div class="tags"><span class="tag">Advies</span><span class="tag">Bouw</span></div>
+<h3>Adviseur Akoestiek</h3><div class="loc">📍 Regio Zuidwest-Nederland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="adviseur brandveiligheid s&amp;w advies bouw" data-tags="Advies|Bouw">
+<a class="cover" href="s-w-adviseur-brandveiligheid/index.html" aria-label="Adviseur Brandveiligheid bij S&amp;W"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#2c2c2c,#1b1b1b)">S<img src="https://static.wixstatic.com/media/07c77c_6358d25e3e4247439f550c1fed30222a~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">S&amp;W</span></div>
+<div class="body"><div class="tags"><span class="tag">Advies</span><span class="tag">Bouw</span></div>
+<h3>Adviseur Brandveiligheid</h3><div class="loc">📍 Regio Zuidwest-Nederland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="bouwkundig adviseur s&amp;w advies bouw" data-tags="Advies|Bouw">
+<a class="cover" href="bouwkundig-adviseur/index.html" aria-label="Bouwkundig Adviseur bij S&amp;W"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#2c2c2c,#1b1b1b)">S<img src="https://static.wixstatic.com/media/07c77c_b632cee57ef04ccbbb367398725bd629~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">S&amp;W</span></div>
+<div class="body"><div class="tags"><span class="tag">Advies</span><span class="tag">Bouw</span></div>
+<h3>Bouwkundig Adviseur</h3><div class="loc">📍 Regio Zuidwest-Nederland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="chauffeur grip-wagen saver brabantse gemeenten transport logistiek milieu" data-tags="Transport|Logistiek|Milieu">
+<a class="cover" href="saver/chauffeur-gripwagen/index.html" aria-label="Chauffeur GRIP-wagen bij Saver"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#007d45,#004d2a)">S<img src="https://static.wixstatic.com/media/e52e10_5c5335afdf3f4c0782cac67f2f84ce92~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Saver</span></div>
+<div class="body"><div class="tags"><span class="tag">Transport</span><span class="tag">Logistiek</span><span class="tag">Milieu</span></div>
+<h3>Chauffeur GRIP-wagen</h3><div class="loc">📍 Brabantse gemeenten</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="chauffeur inzameling saver brabant (zeven gemeenten) transport logistiek milieu" data-tags="Transport|Logistiek|Milieu">
+<a class="cover" href="saver/chauffeur-inzameling/index.html" aria-label="Chauffeur Inzameling bij Saver"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#007d45,#004d2a)">S<img src="https://static.wixstatic.com/media/e52e10_9233e7cf24c941b1841511992e8612b7~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Saver</span></div>
+<div class="body"><div class="tags"><span class="tag">Transport</span><span class="tag">Logistiek</span><span class="tag">Milieu</span></div>
+<h3>Chauffeur Inzameling</h3><div class="loc">📍 Brabant (zeven gemeenten)</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="chauffeur kraanwagen saver brabantse gemeenten transport logistiek milieu" data-tags="Transport|Logistiek|Milieu">
+<a class="cover" href="saver/chauffeur-kraanwagen/index.html" aria-label="Chauffeur Kraanwagen bij Saver"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#007d45,#004d2a)">S<img src="https://static.wixstatic.com/media/e52e10_c03ecfc59bfb49d79a07a7261d0fd02a~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Saver</span></div>
+<div class="body"><div class="tags"><span class="tag">Transport</span><span class="tag">Logistiek</span><span class="tag">Milieu</span></div>
+<h3>Chauffeur Kraanwagen</h3><div class="loc">📍 Brabantse gemeenten</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="verkoopmedewerker agf sligro voeding commercieel" data-tags="Voeding|Commercieel">
+<a class="cover" href="sligro/index.html" aria-label="Verkoopmedewerker AGF bij Sligro"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#357830,#204a1d)">S<img src="https://static.wixstatic.com/media/e52e10_ed2029d0776f43cf9f52326265334050~mv2.png" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Sligro</span></div>
+<div class="body"><div class="tags"><span class="tag">Voeding</span><span class="tag">Commercieel</span></div>
+<h3>Verkoopmedewerker AGF</h3><div class="loc">📍 Regio Zuidwest-Nederland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="servicemonteur synto zeeland techniek" data-tags="Techniek">
+<a class="cover" href="synto/service-monteur/index.html" aria-label="Servicemonteur bij Synto"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#b5b500,#707000)">S<img src="https://static.wixstatic.com/media/e52e10_49358e49f26342809429cd6d877cada7~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Synto</span></div>
+<div class="body"><div class="tags"><span class="tag">Techniek</span></div>
+<h3>Servicemonteur</h3><div class="loc">📍 Zeeland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="servicetechnicus synto zeeland techniek" data-tags="Techniek">
+<a class="cover" href="synto/servicetechnicus/index.html" aria-label="Servicetechnicus bij Synto"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#b5b500,#707000)">S<img src="https://static.wixstatic.com/media/e52e10_b083198bd3d14fffa4fdf07e95c1a2dd~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Synto</span></div>
+<div class="body"><div class="tags"><span class="tag">Techniek</span></div>
+<h3>Servicetechnicus</h3><div class="loc">📍 Zeeland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="werkvoorbereider werktuigbouwkunde synto zeeland techniek" data-tags="Techniek">
+<a class="cover" href="synto/werk-voorbereider/index.html" aria-label="Werkvoorbereider Werktuigbouwkunde bij Synto"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#b5b500,#707000)">S<img src="https://static.wixstatic.com/media/e52e10_a2d37f705deb49108b97261d619b87d5~mv2.png" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Synto</span></div>
+<div class="body"><div class="tags"><span class="tag">Techniek</span></div>
+<h3>Werkvoorbereider Werktuigbouwkunde</h3><div class="loc">📍 Zeeland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="technische dienst medewerker / inkoper (interim) top onions zeeland, zuid-beveland techniek voeding inkoop" data-tags="Techniek|Voeding|Inkoop">
+<a class="cover" href="top-1/index.html" aria-label="Technische Dienst Medewerker / Inkoper (interim) bij TOP Onions"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#357830,#204a1d)">T<img src="https://static.wixstatic.com/media/07c77c_eebac25d918a45fea89d4b9e24654225~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">TOP Onions</span></div>
+<div class="body"><div class="tags"><span class="tag">Techniek</span><span class="tag">Voeding</span><span class="tag">Inkoop</span></div>
+<h3>Technische Dienst Medewerker / Inkoper (interim)</h3><div class="loc">📍 Zeeland, Zuid-Beveland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="commercieel medewerker binnendienst tramper technology commercieel techniek" data-tags="Commercieel|Techniek">
+<a class="cover" href="tramper-commercieel-medewerker/index.html" aria-label="Commercieel Medewerker Binnendienst bij Tramper Technology"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#05356e,#032044)">T<img src="https://static.wixstatic.com/media/dafd0f_25f24048816a4a23af31c52d6f6f1622~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Tramper Technology</span></div>
+<div class="body"><div class="tags"><span class="tag">Commercieel</span><span class="tag">Techniek</span></div>
+<h3>Commercieel Medewerker Binnendienst</h3><div class="loc">📍 Regio Zuidwest-Nederland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="elektromonteur tramper technology techniek" data-tags="Techniek">
+<a class="cover" href="tramper-monteur/index.html" aria-label="Elektromonteur bij Tramper Technology"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#05356e,#032044)">T<img src="https://static.wixstatic.com/media/dafd0f_29934e2e224c4f8089ee5b635fd23651~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Tramper Technology</span></div>
+<div class="body"><div class="tags"><span class="tag">Techniek</span></div>
+<h3>Elektromonteur</h3><div class="loc">📍 Regio Zuidwest-Nederland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="junior magazijnmedewerker tramper technology logistiek techniek" data-tags="Logistiek|Techniek">
+<a class="cover" href="tramper-magazijn/index.html" aria-label="Junior Magazijnmedewerker bij Tramper Technology"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#05356e,#032044)">T<img src="https://static.wixstatic.com/media/dafd0f_d7465032a0574169b14129c7b0827cf9~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Tramper Technology</span></div>
+<div class="body"><div class="tags"><span class="tag">Logistiek</span><span class="tag">Techniek</span></div>
+<h3>Junior Magazijnmedewerker</h3><div class="loc">📍 Regio Zuidwest-Nederland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="junior werkvoorbereider tramper technology techniek" data-tags="Techniek">
+<a class="cover" href="tramper-werkvoorbereider/index.html" aria-label="Junior Werkvoorbereider bij Tramper Technology"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#05356e,#032044)">T<img src="https://static.wixstatic.com/media/dafd0f_240c3926141145a69201a06f4425fac2~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Tramper Technology</span></div>
+<div class="body"><div class="tags"><span class="tag">Techniek</span></div>
+<h3>Junior Werkvoorbereider</h3><div class="loc">📍 Regio Zuidwest-Nederland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="logistiek manager tramper technology logistiek transport techniek" data-tags="Logistiek|Transport|Techniek">
+<a class="cover" href="tramper-logistiek/index.html" aria-label="Logistiek Manager bij Tramper Technology"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#05356e,#032044)">T<img src="https://static.wixstatic.com/media/dafd0f_d1acd6cab4804090b5d8e0fffbf5a0e1~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Tramper Technology</span></div>
+<div class="body"><div class="tags"><span class="tag">Logistiek</span><span class="tag">Transport</span><span class="tag">Techniek</span></div>
+<h3>Logistiek Manager</h3><div class="loc">📍 Regio Zuidwest-Nederland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="magazijnbeheerder tramper technology logistiek techniek" data-tags="Logistiek|Techniek">
+<a class="cover" href="tramper-magazijn-1/index.html" aria-label="Magazijnbeheerder bij Tramper Technology"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#05356e,#032044)">T<img src="https://static.wixstatic.com/media/dafd0f_d7465032a0574169b14129c7b0827cf9~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Tramper Technology</span></div>
+<div class="body"><div class="tags"><span class="tag">Logistiek</span><span class="tag">Techniek</span></div>
+<h3>Magazijnbeheerder</h3><div class="loc">📍 Regio Zuidwest-Nederland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="software engineer tramper technology ict techniek" data-tags="ICT|Techniek">
+<a class="cover" href="tramper-engineer/index.html" aria-label="Software Engineer bij Tramper Technology"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#05356e,#032044)">T<img src="https://static.wixstatic.com/media/dafd0f_d852ee1748b446088ee1fb7e2a91e226~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Tramper Technology</span></div>
+<div class="body"><div class="tags"><span class="tag">ICT</span><span class="tag">Techniek</span></div>
+<h3>Software Engineer</h3><div class="loc">📍 Regio Zuidwest-Nederland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="front-end marketeer / hoofd social media upfront commercieel voeding marketing" data-tags="Commercieel|Voeding|Marketing">
+<a class="cover" href="upfront/index.html" aria-label="Front-End Marketeer / Hoofd Social Media bij Upfront"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#242424,#161616)">U<img src="https://static.wixstatic.com/media/07c77c_6def973380d149f487619ac6ad24075d~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Upfront</span></div>
+<div class="body"><div class="tags"><span class="tag">Commercieel</span><span class="tag">Voeding</span><span class="tag">Marketing</span></div>
+<h3>Front-End Marketeer / Hoofd Social Media</h3><div class="loc">📍 Regio Zuidwest-Nederland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="trekkerchauffeur van de velde groenverzorging groen transport" data-tags="Groen|Transport">
+<a class="cover" href="van-de-velde-groenverzorging-trekker-chauffeur/index.html" aria-label="Trekkerchauffeur bij Van de Velde Groenverzorging"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#085200,#043200)">V<img src="https://static.wixstatic.com/media/07c77c_c300fec71dcd40a3ac77e518b49d4d03~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Van de Velde Groenverzorging</span></div>
+<div class="body"><div class="tags"><span class="tag">Groen</span><span class="tag">Transport</span></div>
+<h3>Trekkerchauffeur</h3><div class="loc">📍 Regio Zuidwest-Nederland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="vakbekwaam hovenier van de velde groenverzorging goes groen" data-tags="Groen">
+<a class="cover" href="van-de-velde-groenverzorging/index.html" aria-label="Vakbekwaam Hovenier bij Van de Velde Groenverzorging"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#085200,#043200)">V<img src="https://static.wixstatic.com/media/256006_f556e879d2ec4b52a6d76dfd834506a0~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Van de Velde Groenverzorging</span></div>
+<div class="body"><div class="tags"><span class="tag">Groen</span></div>
+<h3>Vakbekwaam Hovenier</h3><div class="loc">📍 Goes</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="voorman hovenier (m/v) van de velde groenverzorging groen" data-tags="Groen">
+<a class="cover" href="van-de-velde-groenverzorging3/index.html" aria-label="Voorman Hovenier (m/v) bij Van de Velde Groenverzorging"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#085200,#043200)">V<img src="https://static.wixstatic.com/media/07c77c_2ee7b9c839c747bfa65cecacf8a6ce8d~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Van de Velde Groenverzorging</span></div>
+<div class="body"><div class="tags"><span class="tag">Groen</span></div>
+<h3>Voorman Hovenier (m/v)</h3><div class="loc">📍 Regio Zuidwest-Nederland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="service- en onderhoudsmonteur van de velde installatiegroep yerseke techniek" data-tags="Techniek">
+<a class="cover" href="vandevelde-1/index.html" aria-label="Service- en Onderhoudsmonteur bij Van de Velde Installatiegroep"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#ffd300,#9e8200)">V<img src="https://static.wixstatic.com/media/e52e10_120ab28b67a748b99db61bdb7731708e" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Van de Velde Installatiegroep</span></div>
+<div class="body"><div class="tags"><span class="tag">Techniek</span></div>
+<h3>Service- en Onderhoudsmonteur</h3><div class="loc">📍 Yerseke</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="kozijnenmonteur wibro west-brabant bouw techniek" data-tags="Bouw|Techniek">
+<a class="cover" href="wibro-monteur/index.html" aria-label="Kozijnenmonteur bij Wibro"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#d20c40,#820727)">W<img src="https://static.wixstatic.com/media/dafd0f_b90c72dc2c8b462b9748dd313a4ce472" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Wibro</span></div>
+<div class="body"><div class="tags"><span class="tag">Bouw</span><span class="tag">Techniek</span></div>
+<h3>Kozijnenmonteur</h3><div class="loc">📍 West-Brabant</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="meubelmaker / interieurbouwer wondergem zeeland bouw techniek" data-tags="Bouw|Techniek">
+<a class="cover" href="wondergem/index.html" aria-label="Meubelmaker / interieurbouwer bij Wondergem"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#f1cf69,#958041)">W<img src="https://static.wixstatic.com/media/JWP09219.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Wondergem</span></div>
+<div class="body"><div class="tags"><span class="tag">Bouw</span><span class="tag">Techniek</span></div>
+<h3>Meubelmaker / interieurbouwer</h3><div class="loc">📍 Zeeland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="timmerman wondergem zeeland bouw techniek" data-tags="Bouw|Techniek">
+<a class="cover" href="wondergem-timmerman/index.html" aria-label="Timmerman bij Wondergem"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#f1cf69,#958041)">W<img src="https://static.wixstatic.com/media/dafd0f_731f4974d4e24210b6512355dbde2a1e~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">Wondergem</span></div>
+<div class="body"><div class="tags"><span class="tag">Bouw</span><span class="tag">Techniek</span></div>
+<h3>Timmerman</h3><div class="loc">📍 Zeeland</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="allround asfaltmedewerker zao zeeland en omstreken bouw infra wegenbouw" data-tags="Bouw|Infra|Wegenbouw">
+<a class="cover" href="zao/index.html" aria-label="Allround Asfaltmedewerker bij ZAO"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#fce400,#9c8d00)">Z
+<span class="cbadge">ZAO</span></div>
+<div class="body"><div class="tags"><span class="tag">Bouw</span><span class="tag">Infra</span><span class="tag">Wegenbouw</span></div>
+<h3>Allround Asfaltmedewerker</h3><div class="loc">📍 Zeeland en omstreken</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="ervaren walsmachinist zao zeeland en omstreken bouw techniek" data-tags="Bouw|Techniek">
+<a class="cover" href="zao-walsmachinist/index.html" aria-label="Ervaren walsmachinist bij ZAO"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#fce400,#9c8d00)">Z<img src="https://static.wixstatic.com/media/dafd0f_853bcccad96a46ce9faad0baf82ee1c5~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">ZAO</span></div>
+<div class="body"><div class="tags"><span class="tag">Bouw</span><span class="tag">Techniek</span></div>
+<h3>Ervaren walsmachinist</h3><div class="loc">📍 Zeeland en omstreken</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div><div class="vcard rv" data-search="leerling asfaltmedewerker zao zeeland en omstreken bouw infra leerwerkplek" data-tags="Bouw|Infra|Leerwerkplek">
+<a class="cover" href="zao-leerling/index.html" aria-label="Leerling Asfaltmedewerker bij ZAO"></a>
+<div class="thumb" style="background:linear-gradient(135deg,#fce400,#9c8d00)">Z<img src="https://static.wixstatic.com/media/e52e10_c92fab08a68c4e6897ea512abc52fdc1~mv2.jpg" alt="" loading="lazy" onerror="this.remove()">
+<span class="cbadge">ZAO</span></div>
+<div class="body"><div class="tags"><span class="tag">Bouw</span><span class="tag">Infra</span><span class="tag">Leerwerkplek</span></div>
+<h3>Leerling Asfaltmedewerker</h3><div class="loc">📍 Zeeland en omstreken</div>
+<div class="go">Bekijk vacature <span class="ar">→</span></div></div></div></div>
+</div></section>
+
+<section class="how"><div class="wrap">
+<span class="kick rv">Zo werkt het</span>
+<h2 class="t rv" style="color:#fff">Solliciteren zonder gedoe</h2>
+<div class="steps">
+<div class="step rv"><span class="num">1</span><h3>Vind je vacature</h3><p>Zoek en filter tussen alle openstaande banen in de regio.</p></div>
+<div class="step rv d1"><span class="num">2</span><h3>Bekijk het bedrijf</h3><p>Elke vacature heeft een eigen pagina met foto's en video van de werkvloer.</p></div>
+<div class="step rv d2"><span class="num">3</span><h3>Solliciteer direct</h3><p>Je gegevens gaan rechtstreeks naar de werkgever. Die neemt zelf contact met je op.</p></div>
+</div>
+</div></section>
+
+<footer><div class="wrap">
+<span>© Kom Werken Bij</span>
+<nav><a href="index.html">Home</a><a href="index.html#vacatures">Vacatures</a><a href="over-ons/index.html">Over ons</a></nav>
+</div></footer>
 <script>
 var hdr=document.getElementById('hdr');
 addEventListener('scroll',function(){hdr.classList.toggle('solid',scrollY>40)},{passive:true});
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
 document.querySelectorAll('.rv:not(.in)').forEach(function(el){io.observe(el)});
-document.querySelectorAll('.vplayer').forEach(function(vp){
-var vc=vp.querySelector('.cover'),vd=vp.querySelector('video'),src=vp.dataset.src;
-vp.addEventListener('click',function(){if(vc.classList.contains('hide'))return;
-if(!vd.querySelector('source')){var so=document.createElement('source');so.src=src;so.type='video/mp4';vd.appendChild(so);vd.load();}
-var pr=vd.play();vd.controls=true;
-if(pr&&pr.then){pr.then(function(){vc.classList.add('hide')}).catch(function(){window.open(src,'_blank')});}
-else{vc.classList.add('hide')}
-vd.addEventListener('error',function(){window.open(src,'_blank')});});});
-</script>
-</body></html>
+var q=document.getElementById('q'),chips=document.querySelectorAll('.chip'),cards=document.querySelectorAll('.vcard'),cnt=document.getElementById('cnt'),tag='';
+function run(){if(!cards.length)return;var s=(q?q.value:'').toLowerCase().trim(),n=0;
+cards.forEach(function(c){var ok=(!s||c.dataset.search.indexOf(s)>-1)&&(!tag||('|'+c.dataset.tags+'|').indexOf('|'+tag+'|')>-1);c.classList.toggle('hidden',!ok);if(ok)n++});
+if(cnt)cnt.textContent=n+' openstaande vacature'+(n==1?'':'s')}
+chips.forEach(function(ch){ch.addEventListener('click',function(){if(ch.classList.contains('on')){ch.classList.remove('on');tag=''}else{chips.forEach(function(x){x.classList.remove('on')});ch.classList.add('on');tag=ch.dataset.tag}run()})});
+if(q)q.addEventListener('input',run);run();
+</script></body></html>
