@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>📐 S&amp;W Bouwkundig Adviseur | Werken bij S&amp;W</title><meta name="description" content="Een bouwproject begint bij jou als Bouwkundig Adviseur. Jij denkt namelijk mee in alles wat te maken heeft met de omgevingsvergunning.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>:root{--p:#2c2c2c;--pd:#1f1f1f;--forest:#222222;--forest2:#252525;
+--acc:#d20000;--accd:#a30000;--ona:#ffffff;--onp:#ffffff;--lite:#f6d1d1;
+--ink:#151f19;--muted:#5b665e;--paper:#f5f6f2;--line:#e3e7dd;--shadow:0 24px 60px -18px rgba(10,20,12,.35)}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,'Segoe UI',Roboto,sans-serif;color:var(--ink);background:#fff;line-height:1.7;font-size:17px;overflow-x:hidden}
+h1,h2,h3{font-family:'Sora','Inter',-apple-system,sans-serif;letter-spacing:-.02em;line-height:1.12}
+a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
+strong{font-weight:800}
+.wrap{max-width:1160px;margin:0 auto;padding:0 28px}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.2,.6,.2,1),transform .7s cubic-bezier(.2,.6,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.08s}.rv.d2{transition-delay:.16s}.rv.d3{transition-delay:.24s}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+.top{position:fixed;top:0;left:0;right:0;z-index:80;transition:.3s}
+.top .wrap{display:flex;align-items:center;gap:20px;height:72px}
+.top.solid{background:rgba(255,255,255,.96);backdrop-filter:blur(10px);box-shadow:0 2px 18px rgba(10,20,12,.1)}
+.wm{font-family:'Sora','Inter',-apple-system,sans-serif;font-weight:800;font-size:1.08rem;letter-spacing:.02em;color:#fff;transition:.3s}
+.hnav{display:flex;align-items:center;gap:18px;margin-left:auto}
+.navlink{color:rgba(255,255,255,.88);font-weight:700;font-size:.92rem;transition:.2s}
+.navlink:hover{color:#fff}
+.top.solid .navlink{color:var(--muted)}
+.top.solid .navlink:hover{color:var(--ink)}
+@media(max-width:560px){.navlink{display:none}}
+.top.solid .wm{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--acc);color:var(--ona);font-weight:800;
+padding:15px 28px;border-radius:14px;border:0;cursor:pointer;font-size:1.01rem;font-family:'Inter',sans-serif;
+transition:transform .18s,box-shadow .18s,filter .18s;box-shadow:0 10px 26px -8px rgba(0,0,0,.3)}
+.btn .ar{transition:transform .18s;font-weight:900}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
+.btn:hover .ar{transform:translateX(4px)}
+.btn.small{padding:10px 18px;font-size:.88rem;border-radius:11px}
+.btn.dark{background:var(--forest);color:#fff}
+.sep{height:72px;margin-top:-72px;position:relative;z-index:6;pointer-events:none}
+.sep svg{display:block;width:100%;height:100%}
+.hero{position:relative;min-height:88vh;display:flex;align-items:center;color:var(--onp);
+background:linear-gradient(115deg,var(--forest) 0%,var(--pd) 48%,var(--p) 100%);padding:128px 0 110px}
+.hero.hasbg{background:linear-gradient(115deg,rgba(0,0,0,.55),rgba(0,0,0,.25)),linear-gradient(115deg,var(--forest) 0%,var(--pd) 48%,var(--p) 100%);color:#fff}
+.hero .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center;position:relative;z-index:2}
+.hero .grid.one{grid-template-columns:1fr;max-width:760px}
+@media(max-width:900px){.hero .grid{grid-template-columns:1fr}.hero{min-height:auto;padding:118px 0 125px}}
+.crumb{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);
+padding:8px 16px;border-radius:999px;font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;backdrop-filter:blur(6px)}
+.crumb .dot{width:8px;height:8px;border-radius:50%;background:#7dff6a;box-shadow:0 0 0 4px rgba(125,255,106,.25);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 4px rgba(125,255,106,.25)}50%{box-shadow:0 0 0 8px rgba(125,255,106,.08)}}
+.hero h1{font-size:clamp(2.1rem,4.8vw,3.6rem);font-weight:800;margin:22px 0 14px}
+.hero h1 em{font-style:normal;position:relative;white-space:nowrap}
+.hero h1 em svg{position:absolute;left:0;right:0;bottom:-9px;width:100%;height:13px}
+.hero .sub{font-size:1.26rem;font-weight:600;margin-bottom:18px;opacity:.96}
+.hero p{opacity:.92;margin-bottom:8px}
+.perks{list-style:none;display:flex;flex-direction:column;gap:10px;margin:16px 0 26px}
+.perks li{display:flex;align-items:center;gap:14px;font-size:1.05rem;font-weight:600}
+.perks .tx,.vidgrid ul .tx{flex:1}
+.perks .ic{width:42px;height:42px;flex:0 0 auto;border-radius:13px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.24);
+display:flex;align-items:center;justify-content:center;font-size:1.25rem;backdrop-filter:blur(4px)}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:8px}
+.pcomp{position:relative;justify-self:end;width:min(420px,100%)}
+.pcomp .frame{position:absolute;inset:26px -26px -26px 26px;border-radius:26px;background:rgba(255,255,255,.16);border:1.5px solid rgba(255,255,255,.35)}
+.pcomp .photo{position:relative;border-radius:26px;overflow:hidden;box-shadow:var(--shadow)}
+.pcomp .photo img{width:100%;height:480px;object-fit:cover;transition:transform .6s}
+.pcomp:hover .photo img{transform:scale(1.03)}
+@media(max-width:900px){.pcomp{justify-self:start}.pcomp .photo img{height:380px}}
+section{position:relative}
+.pad{padding:92px 0}
+.kick{display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--pd);margin-bottom:16px}
+.kick:before{content:"";width:26px;height:3px;background:var(--acc);border-radius:2px}
+h2.t{font-size:clamp(1.6rem,3.3vw,2.4rem);font-weight:800;margin-bottom:18px}
+.lead{font-size:1.13rem;color:#333f37;max-width:64ch}
+.lead+.lead{margin-top:14px}
+.twocol{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+.twocol.flip .txt{order:2}.twocol.flip .media{order:1}
+@media(max-width:900px){.twocol,.twocol.flip{grid-template-columns:1fr;gap:38px}.twocol.flip .txt{order:1}.twocol.flip .media{order:2}}
+.photostack{position:relative}
+.photostack img{border-radius:24px;width:100%;height:430px;object-fit:cover;box-shadow:var(--shadow)}
+.media.multi{display:grid;gap:14px;grid-template-columns:1fr 1fr}
+.media.multi img{border-radius:18px;height:260px;width:100%;object-fit:cover;box-shadow:0 12px 30px rgba(10,20,12,.18)}
+.videoband{background:radial-gradient(1200px 600px at 80% -10%,var(--forest2) 0%,var(--forest) 55%);color:#fff;padding:150px 0 122px;
+clip-path:polygon(0 0,100% 64px,100% 100%,0 100%);margin-top:-64px;position:relative;z-index:4}
+.videoband .kick{color:var(--lite)}.videoband .kick:before{background:var(--lite)}
+.videoband p,.videoband .lead{color:rgba(255,255,255,.82)}
+.vidgrid{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:center;margin-top:36px}
+@media(max-width:900px){.vidgrid{grid-template-columns:1fr}}
+.vidgrid ul{list-style:none;display:flex;flex-direction:column;gap:14px}
+.vidgrid ul li{display:flex;gap:14px;align-items:flex-start;font-weight:600;color:rgba(255,255,255,.92)}
+.vidgrid ul .ic{width:34px;height:34px;flex:0 0 auto;border-radius:10px;background:rgba(255,255,255,.14);color:var(--lite);font-weight:900;
+display:flex;align-items:center;justify-content:center;font-size:.95rem}
+.vplayer{position:relative;border-radius:24px;overflow:hidden;box-shadow:0 40px 90px -20px rgba(0,0,0,.6);cursor:pointer;background:#000}
+.vplayer video{width:100%;aspect-ratio:16/9;display:block}
+.vplayer .cover{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;
+background-size:cover;background-position:center;transition:opacity .4s}
+.vplayer .cover:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.18),rgba(0,0,0,.5))}
+.vplayer .cover.hide{opacity:0;pointer-events:none}
+.vplayer .playbtn{position:relative;width:88px;height:88px;border-radius:50%;background:var(--acc);color:var(--ona);display:flex;align-items:center;justify-content:center;
+font-size:1.8rem;padding-left:6px;box-shadow:0 0 0 0 rgba(255,255,255,.4);animation:ring 2.2s infinite;transition:transform .2s}
+.vplayer:hover .playbtn{transform:scale(1.08)}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(255,255,255,.35)}70%{box-shadow:0 0 0 24px rgba(255,255,255,0)}100%{box-shadow:0 0 0 0 rgba(255,255,255,0)}}
+.vplayer .cover b{position:relative;font-family:'Sora','Inter',sans-serif;font-size:1.1rem}
+.vph{aspect-ratio:16/9;border-radius:24px;margin:26px 0 0;background:repeating-linear-gradient(45deg,#161d18,#161d18 14px,#1d2620 14px,#1d2620 28px);
+border:2px dashed rgba(255,255,255,.35);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#e5ece2;gap:12px;text-align:center;padding:20px}
+.vph .play{width:70px;height:70px;border-radius:50%;background:var(--acc);color:var(--ona);display:flex;align-items:center;justify-content:center;font-size:1.5rem}
+.vph b{font-size:1.05rem}.vph span{font-size:.83rem;opacity:.7;max-width:420px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;margin-top:40px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:28px 26px;transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-6px);box-shadow:0 22px 44px -16px rgba(10,20,12,.2)}
+.card .em{width:52px;height:52px;border-radius:16px;background:linear-gradient(135deg,var(--p),var(--pd));color:var(--onp);
+display:flex;align-items:center;justify-content:center;font-size:1.45rem;margin-bottom:16px;box-shadow:0 10px 22px -8px rgba(0,0,0,.3)}
+.card b{font-family:'Sora','Inter',sans-serif;font-size:1.02rem;display:block;line-height:1.45;font-weight:700}
+.checks{display:flex;flex-direction:column;gap:14px;margin-top:26px}
+.check{display:flex;gap:16px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:16px;padding:17px 22px;
+font-weight:600;transition:transform .2s,box-shadow .2s}
+.check:hover{transform:translateX(6px);box-shadow:0 12px 28px -12px rgba(10,20,12,.16)}
+.check .ic{width:34px;height:34px;flex:0 0 auto;border-radius:50%;background:var(--p);color:var(--onp);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:.9rem}
+blockquote.q{background:#fff;border-left:6px solid var(--acc);border-radius:0 16px 16px 0;padding:26px 30px;font-size:1.15rem;font-weight:600;color:#333f37;
+box-shadow:0 10px 30px rgba(10,20,12,.1);margin:16px 0}
+blockquote.q footer{margin-top:10px;font-size:.9rem;color:var(--muted);font-weight:800}
+section.blk.alt{background:var(--paper)}
+section.blk{position:relative;z-index:1}
+.ctaband{background:linear-gradient(115deg,var(--pd),var(--p));color:var(--onp);padding:96px 0 66px;
+clip-path:polygon(0 0,100% 44px,100% 100%,0 100%);margin-top:-44px;position:relative;z-index:4}
+.ctaband .wrap{display:flex;align-items:center;justify-content:space-between;gap:26px;flex-wrap:wrap}
+.ctaband h2{font-size:clamp(1.4rem,3vw,2.1rem);font-weight:800}
+.apply{background:radial-gradient(1000px 500px at 15% 0%,var(--forest2) 0%,var(--forest) 60%);color:#fff;padding:150px 0 116px;clip-path:polygon(0 48px,100% 0,100% 100%,0 100%);margin-top:-48px;position:relative;z-index:4}
+.apply .grid{display:grid;grid-template-columns:1fr 1.05fr;gap:66px;align-items:center}
+@media(max-width:900px){.apply .grid{grid-template-columns:1fr;gap:42px}}
+.apply .kick{color:var(--lite)}.apply .kick:before{background:var(--lite)}
+.apply p,.apply .lead{color:rgba(255,255,255,.85)}
+.apply ul.mini{list-style:none;margin-top:26px;display:flex;flex-direction:column;gap:14px}
+.apply ul.mini li{display:flex;gap:14px;align-items:center;font-weight:700}
+.apply ul.mini .ic{width:38px;height:38px;flex:0 0 auto;border-radius:12px;background:rgba(255,255,255,.13);display:flex;align-items:center;justify-content:center}
+.fcard{background:#fff;color:var(--ink);border-radius:26px;padding:36px;box-shadow:0 50px 110px -24px rgba(0,0,0,.55)}
+.fcard h3{font-size:1.28rem;margin-bottom:4px}
+.fcard .fsub{font-size:.9rem;color:var(--muted);margin-bottom:14px}
+.fcard label{display:block;font-size:.82rem;font-weight:800;margin:15px 0 7px;color:#3b463e}
+.fcard input,.fcard textarea{width:100%;padding:15px 17px;border-radius:13px;border:1.5px solid var(--line);font-size:1rem;
+font-family:'Inter',sans-serif;background:#fafbf8;transition:border-color .2s,box-shadow .2s}
+.fcard input:focus,.fcard textarea:focus{outline:none;border-color:var(--p);box-shadow:0 0 0 4px rgba(0,0,0,.06)}
+.fcard .btn{width:100%;justify-content:center;margin-top:22px;font-size:1.06rem;padding:16px}
+.fcard .note{font-size:.8rem;color:var(--muted);margin-top:13px;text-align:center}
+.formok{display:none;background:#e9f6ec;border:1.5px solid #2f8f4e;color:#1c5230;border-radius:14px;padding:18px 20px;margin-top:16px;font-weight:700}
+footer{background:#0c130e;color:#8b9a8d;padding:32px 0}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+footer span{font-size:.86rem}
+.stickycta{display:none;position:fixed;left:0;right:0;bottom:0;z-index:90;padding:12px 16px calc(12px + env(safe-area-inset-bottom));
+background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border-top:1px solid var(--line);box-shadow:0 -8px 30px rgba(10,20,12,.16)}
+.stickycta .btn{width:100%;justify-content:center}
+@media(max-width:760px){.stickycta{display:block}}
+.simple{padding:150px 0 110px;text-align:center;min-height:70vh}
+.simple h1{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;margin-bottom:14px}
+.simple p{color:var(--muted);max-width:560px;margin:0 auto 22px}</style></head>
+<body id="pagetop">
+<header class="top" id="hdr"><div class="wrap">
+<span class="wm">S&amp;W</span>
+<div class="hnav"><a class="navlink" href="../sw-bouwkundig-ingenieurs/index.html">Alle vacatures bij S&amp;W</a><a class="btn small" href="#formulier">Solliciteer direct</a></div>
+</div></header>
+<div class="hero" id="top"><div class="wrap"><div class="grid">
+<div><span class="crumb rv in"><span class="dot"></span>Vacature open</span>
+<h1 class="rv in">Word jij de schakel tussen klanten en <em>bouwregelgeving?<svg viewBox="0 0 200 12" preserveAspectRatio="none"><path d="M2 9 Q 60 2 118 7 T 198 5" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" opacity=".55"/></svg></em></h1>
+<p class="sub rv in d1">Een bouwproject begint bij jou als <strong>Bouwkundig Adviseur</strong>. Jij denkt namelijk mee in alles wat te maken heeft met de <strong>omgevingsvergunning</strong>.</p><ul class="perks rv in d2"><li><span class="ic">✓</span><span class="tx"><strong>Adviseren</strong>, berekenen en controleren</span></li><li><span class="ic">✓</span><span class="tx">Nauw <strong>samenwerken</strong> met opdrachtgevers</span></li><li><span class="ic">✓</span><span class="tx">Veel <strong>afwisseling</strong> in je werk</span></li><li><span class="ic">✓</span><span class="tx">En als je wilt: af en toe naar een <strong>project</strong></span></li></ul><div class="cta-row rv in d3"><a class="btn" href="#formulier">Solliciteren <span class="ar">→</span></a> </div></div>
+<div class="pcomp rv in d2"><div class="frame"></div><div class="photo"><img src="https://static.wixstatic.com/media/07c77c_b632cee57ef04ccbbb367398725bd629~mv2.jpg" alt="Werken bij S&amp;W" onerror="this.closest('.pcomp').style.display='none'"></div></div>
+</div></div></div>
+<div class="sep"><svg viewBox="0 0 1200 72" preserveAspectRatio="none"><polygon points="0,8 0,72 1200,72" fill="#f5f6f2"/></svg></div><section class="blk alt pad" style="background:#f5f6f2"><div class="wrap"><div class="twocol"><div class="txt rv"><span class="kick">S&amp;W</span><h2 class="t">Wat je gaat doen:</h2><p class="lead">Als Bouwkundig Adviseur controleer je of de ontwerpen van onze opdrachtgevers voldoen aan het <strong>Bouwbesluit</strong>. Door jouw berekeningen en toetsingen worden de ontwerpen beter en verloopt de <strong>vergunningsaanvraag</strong> soepeler.</p><p class="lead">Voor de opdrachtgever ben jij dé <strong>contactpersoon</strong> op het gebied van bouwregelgeving. Je draagt praktische oplossingen aan om het aangeleverde plan te laten voldoen aan de <strong>bouwregelgeving</strong>. Dat doe je vooral op kantoor, en als je wilt ga je ook naar projecten toe.</p><p class="lead">Liever werken in een andere functie? Bekijk onze andere <strong>vacatures</strong>. Of nog niet helemaal zeker wat bij je past? Vraag dan wat meer informatie aan!</p><div style="margin-top:26px"><a class="btn" href="../sw-bouwkundig-ingenieurs/index.html">Bekijk onze andere vacatures. <span class="ar">→</span></a> <a class="btn dark" href="#formulier">Vraag dan wat meer informatie aan! <span class="ar">→</span></a> </div></div><div class="photostack rv d2"><img src="https://static.wixstatic.com/media/07c77c_1c9b650f8a184e37b9a3894efa23bfa3~mv2.jpg" alt="S&amp;W" loading="lazy" onerror="this.parentNode.style.display='none'"></div></div></div></section>
+<div class="sep"><svg viewBox="0 0 1200 72" preserveAspectRatio="none"><polygon points="0,72 1200,8 1200,72" fill="#ffffff"/></svg></div><section class="blk pad" style="background:#ffffff"><div class="wrap"><div class="twocol flip"><div class="txt rv"><span class="kick">S&amp;W</span><h2 class="t">Waarom werken bij S&amp;W:</h2><p class="lead"><strong>Zelfontwikkeling</strong>: naast cursussen en opleidingen pak je bij S&amp;W ook projecten of werkzaamheden op die jij <strong>gaaf</strong> vindt. Zo ontwikkel jij je echt tot expert op het gebied waar jij enthousiast van wordt.</p><p class="lead"><strong>Werksfeer</strong>: je werkt samen met een geweldig team. Een hechte club met veel kennis, die het samen doet en elkaar helpt.</p><p class="lead"><strong>Altijd anders</strong>: je werkt aan allerlei geweldige projecten. Van een strandpaviljoen of appartementengebouw tot een recreatiewoning of complete fabriek.</p><p class="lead"><strong>Luisteren</strong>: zonder onze mensen bestaat S&amp;W niet. En dat beseffen we. Daarom luisteren we echt naar wat jij nodig hebt en waar jij enthousiast van wordt.</p><div style="margin-top:26px"><a class="btn" href="#formulier">Solliciteren <span class="ar">→</span></a> <a class="btn dark" href="#formulier">Solliciteren <span class="ar">→</span></a> <a class="btn dark" href="#formulier">Solliciteren <span class="ar">→</span></a> <a class="btn dark" href="#formulier">Solliciteren <span class="ar">→</span></a> <a class="btn dark" href="#formulier">Solliciteren <span class="ar">→</span></a> </div></div><div class="media multi rv d2"><img src="https://static.wixstatic.com/media/07c77c_c1a04e04f4764a08b87cc419063017cb~mv2.jpg" alt="" loading="lazy" onerror="this.remove()"><img src="https://static.wixstatic.com/media/07c77c_f5a602d20ff74617a1797dc055c1f9bf~mv2.jpg" alt="" loading="lazy" onerror="this.remove()"><img src="https://static.wixstatic.com/media/07c77c_d1363e794d414ab683803127a9ed7fa4~mv2.jpg" alt="" loading="lazy" onerror="this.remove()"><img src="https://static.wixstatic.com/media/07c77c_ee7820e7b41d4caaafad08ba87022ca5~mv2.jpg" alt="" loading="lazy" onerror="this.remove()"></div></div></div></section>
+<div class="sep"><svg viewBox="0 0 1200 72" preserveAspectRatio="none"><polygon points="0,8 0,72 1200,72" fill="#f5f6f2"/></svg></div><section class="blk alt pad" style="background:#f5f6f2"><div class="wrap"><div class="rv" style="max-width:780px"><span class="kick">S&amp;W</span><h2 class="t">Wat je nodig hebt:</h2><p class="lead">Een relevante <strong>hbo-opleiding</strong> of vergelijkbare ervaring.</p><p class="lead">Ervaring met <strong>Autodesk AutoCAD</strong> is een pre.</p><p class="lead">Kennis van de juiste <strong>regelgeving</strong> is handig! Heb je die nog niet? Dan leiden we je op.</p></div></div></section>
+<section class="videoband"><div class="wrap"><div class="vidgrid" style="grid-template-columns:1fr 1fr">
+<div class="rv"><span class="kick">S&amp;W</span><h2 class="t">Over S&amp;W</h2><p class="lead">Het meest <strong>klantvriendelijke</strong> ingenieursbureau van Nederland. Dat is ons streven.</p><p class="lead">Wat dat inhoudt? <strong>Recht door zee</strong>, met twee voeten op de grond en gewoon vragen beantwoorden.</p><p class="lead">Brandveiligheid, akoestische rapportages, bouwtekeningen controleren en <strong>BENG-berekeningen</strong> maken. Kortom: alles wat nodig is om een bouwvergunning (omgevingsvergunning) aan te vragen. En dat voor allerlei <strong>projecten</strong>: van voetbalstadion en appartementencomplex tot recreatiewoning en strandpaviljoen, van alles komt langs.</p>
+<div style="margin-top:24px"><a class="btn" href="#formulier">Solliciteren <span class="ar">→</span></a> </div></div>
+
+</div></div></section>
+<section class="apply" id="solliciteer"><div class="wrap"><div class="grid">
+<div class="rv"><span class="kick">Solliciteren</span><h2 class="t">Ook enthousiast geworden?</h2><p class="lead">Laat je <strong>gegevens</strong> achter, dan nemen we binnenkort contact met je op. Gewoon recht door zee, zoals je van ons mag verwachten.</p>
+<ul class="mini"><li><span class="ic">📞</span>Je hoort snel van S&amp;W</li>
+<li><span class="ic">📄</span>Geen cv nodig, jouw inzet telt</li></ul></div>
+<div class="fcard rv d2" id="formulier">
+<h3>Solliciteer bij S&amp;W</h3>
+<div class="fsub">Naam en nummer is genoeg, de rest komt later.</div>
+<form onsubmit="return sendApp(this)">
+<label>Naam*</label><input name="naam" required placeholder="Voor- en achternaam">
+<label>Telefoonnummer*</label><input name="tel" required placeholder="06 - 12 34 56 78">
+<label>E-mailadres*</label><input type="email" name="email" required placeholder="jij@voorbeeld.nl">
+<label>Vertel kort iets over jezelf (optioneel)</label><textarea name="msg" rows="3" placeholder="Bijv. je ervaring of wanneer je kunt beginnen"></textarea>
+<button class="btn" type="submit">Verstuur sollicitatie <span class="ar">→</span></button>
+<div class="note">S&amp;W neemt zelf contact met je op.</div>
+</form>
+<div class="formok" id="formok">✅ Bedankt! Je sollicitatie is verstuurd. S&amp;W belt je snel!</div>
+</div>
+<script>
+function sendApp(f){
+var b='Pagina: https://www.komwerkenbij.org/bouwkundig-adviseur%0D%0ANaam: '+encodeURIComponent(f.naam.value)+'%0D%0ATelefoon: '+encodeURIComponent(f.tel.value)+'%0D%0AE-mail: '+encodeURIComponent(f.email.value)+'%0D%0A%0D%0A'+encodeURIComponent(f.msg.value);
+window.location.href='mailto:info@komwerkenbij.org?subject='+encodeURIComponent('Sollicitatie via 📐 S&amp;W Bouwkundig Adviseur | Werken bij S&amp;W')+'&body='+b;
+setTimeout(function(){document.getElementById('formok').style.display='block';f.style.display='none';},900);
+return false;}
+</script>
+</div></div></section>
+<footer><div class="wrap"><span>© S&amp;W</span><span>S&amp;W</span></div></footer>
+<div class="stickycta"><a class="btn" href="#formulier">Solliciteer direct <span class="ar">→</span></a></div>
+<script>
+var hdr=document.getElementById('hdr');
+addEventListener('scroll',function(){hdr.classList.toggle('solid',scrollY>40)},{passive:true});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
+document.querySelectorAll('.rv:not(.in)').forEach(function(el){io.observe(el)});
+document.querySelectorAll('.vplayer').forEach(function(vp){
+var vc=vp.querySelector('.cover'),vd=vp.querySelector('video'),src=vp.dataset.src;
+vp.addEventListener('click',function(){if(vc.classList.contains('hide'))return;
+if(!vd.querySelector('source')){var so=document.createElement('source');so.src=src;so.type='video/mp4';vd.appendChild(so);vd.load();}
+var pr=vd.play();vd.controls=true;
+if(pr&&pr.then){pr.then(function(){vc.classList.add('hide')}).catch(function(){window.open(src,'_blank')});}
+else{vc.classList.add('hide')}
+vd.addEventListener('error',function(){window.open(src,'_blank')});});});
+</script>
+</body></html>
