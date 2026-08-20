@@ -147,7 +147,7 @@ footer span{font-size:.86rem}
 .stickycta{display:none;position:fixed;left:0;right:0;bottom:0;z-index:90;padding:12px 16px calc(12px + env(safe-area-inset-bottom));
 background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border-top:1px solid var(--line);box-shadow:0 -8px 30px rgba(10,20,12,.16)}
 .stickycta .btn{width:100%;justify-content:center}
-@media(max-width:760px){.stickycta{display:block}}
+@media(max-width:760px){.stickycta{display:flex}}
 .simple{padding:150px 0 110px;text-align:center;min-height:70vh}
 .simple h1{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;margin-bottom:14px}
 .simple p{color:var(--muted);max-width:560px;margin:0 auto 22px}.ph{background:#fff3a8;color:#5b4a00;padding:2px 10px;border-radius:8px;font-weight:700;font-style:normal;font-size:.92em;display:inline-block}
@@ -174,6 +174,65 @@ background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border-top:1px solid
 .avarow img:first-child{margin-left:0}
 .avarow img:hover{transform:translateY(-6px) scale(1.12);z-index:3;position:relative}
 .avarow span{margin-left:16px;font-weight:800;font-size:1.02rem}
+
+/* ===== mobiel-eerst verbeteringen ===== */
+.vidgrid.two{grid-template-columns:1fr 1fr}
+@media(max-width:900px){.vidgrid.two{grid-template-columns:1fr;gap:30px}}
+.swipehint{display:none}
+.stickycta{gap:10px}
+.callbtn{display:flex;align-items:center;justify-content:center;flex:0 0 56px;border-radius:14px;background:var(--forest);color:#fff;font-size:1.35rem;box-shadow:0 10px 26px -8px rgba(0,0,0,.3)}
+@media(max-width:760px){
+.top{display:none}
+body{padding-bottom:82px}
+.wrap{padding:0 20px}
+.hero{padding:40px 0 58px;min-height:auto}
+.hero .grid{gap:26px}
+.hero h1{font-size:2rem;margin:16px 0 12px}
+.hero .sub{font-size:1.06rem;margin-bottom:12px}
+.perks{gap:9px;margin:12px 0 20px}
+.perks li{font-size:.97rem}
+.perks .ic{width:38px;height:38px;font-size:1.1rem;border-radius:11px}
+.cta-row .btn{width:100%;justify-content:center}
+.pcomp{width:100%;margin-top:6px}
+.pcomp .frame{inset:12px -10px -10px 12px;border-radius:18px}
+.pcomp .photo{border-radius:18px}
+.pcomp .photo img{height:300px}
+.pad{padding:58px 0}
+h2.t{font-size:1.5rem}
+.lead{font-size:1.02rem}
+.twocol,.twocol.flip{gap:24px}
+.photostack img{height:250px;border-radius:16px}
+.media.multi img{height:160px}
+.videoband{padding:88px 0 66px;clip-path:polygon(0 0,100% 30px,100% 100%,0 100%);margin-top:-30px}
+.vph{margin-top:20px;border-radius:16px}
+.vph .play{width:54px;height:54px;font-size:1.15rem}
+.vph b{font-size:.95rem}.vph span{font-size:.78rem}
+.cards{gap:12px;margin-top:26px}
+.card{padding:20px 18px;border-radius:16px}
+.card .em{width:44px;height:44px;font-size:1.2rem;margin-bottom:12px;border-radius:13px}
+.checks{gap:10px;margin-top:20px}
+.check{padding:13px 15px;border-radius:13px;font-size:.95rem}
+.apply{padding:84px 0 84px;clip-path:polygon(0 20px,100% 0,100% 100%,0 100%);margin-top:-20px}
+.apply .grid{gap:32px}
+.fcard{padding:26px 20px;border-radius:20px}
+.fcard input,.fcard textarea{font-size:16px}
+.marquee{padding:18px 0 54px}
+.marquee img{height:138px;border-radius:10px}
+.avarow img{width:50px;height:50px;margin-left:-13px;border-width:2.5px}
+.avarow span{font-size:.94rem;margin-left:12px}
+.polasec{padding:52px 0 42px}
+.polasec .wrap{padding-right:0}
+.polawall{flex-wrap:nowrap;gap:14px;justify-content:flex-start;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;margin:26px 0 0;padding:14px 20px 22px 2px;scrollbar-width:none}
+.polawall::-webkit-scrollbar{display:none}
+.pola,.pola.wide{flex:0 0 auto;width:74vw;max-width:300px;scroll-snap-align:center}
+.pola.r1,.pola.r3{transform:rotate(-1.2deg)}
+.pola.r2,.pola.r4{transform:rotate(1.2deg)}
+.pola img{height:215px}
+.pola.wide img{height:195px}
+.pola .cap{font-size:1.25rem}
+.swipehint{display:block;text-align:center;font-size:.84rem;color:var(--muted);font-weight:700;margin-top:4px}
+footer{padding:26px 0}
+}
 </style></head>
 <body id="pagetop">
 <header class="top" id="hdr"><div class="wrap">
@@ -190,16 +249,16 @@ background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border-top:1px solid
 <section class="videoband"><div class="wrap">
 <div class="rv" style="max-width:660px"><span class="kick">Emergo+</span>
 <h2 class="t">Proef alvast de sfeer</h2><p class="lead">Cijfers en woorden zijn leuk, maar zien werkt beter. <strong>Binnenkort staat hier de bedrijfsvideo</strong>, vers van de filmdag.</p></div>
-<div class="vidgrid"><div class="vph rv"><div class="play">▶</div><b>Hier komt de bedrijfsvideo</b><span>Voeg de video-URL toe in videos.json en genereer opnieuw.</span></div></div>
+<div class="vidgrid"><div class="vph rv"><div class="play">▶</div><b>Hier komt de bedrijfsvideo</b><span>De video van de filmdag verschijnt hier binnenkort.</span></div></div>
 
 </div></section>
 <section class="polasec"><div class="wrap">
 <div class="rv" style="max-width:640px;margin:0 auto;text-align:center"><span class="kick" style="justify-content:center">Team Emergo+</span>
 <h2 class="t">Maak alvast kennis met je collega's</h2></div>
 <div class="polawall"><div class="pola r1 rv d0"><span class="tape"></span><img src="img/pola1.jpg" alt="" loading="lazy"><div class="cap">Duimen dat jij het wordt 👍</div></div><div class="pola wide r2 rv d1"><span class="tape"></span><img src="img/pola2.jpg" alt="" loading="lazy"><div class="cap">Het hele team in één shot</div></div><div class="pola wide r3 rv d2"><span class="tape"></span><img src="img/pola3.jpg" alt="" loading="lazy"><div class="cap">De makers van jouw product 👍</div></div><div class="pola wide r4 rv d3"><span class="tape"></span><img src="img/pola4.jpg" alt="" loading="lazy"><div class="cap">Gezelligheid op kantoor</div></div></div>
-</div></section><div class="sep"><svg viewBox="0 0 1200 72" preserveAspectRatio="none"><polygon points="0,8 0,72 1200,72" fill="#ffffff"/></svg></div><section class="blk pad" style="background:#ffffff"><div class="wrap"><div class="rv" style="max-width:640px"><span class="kick">Emergo+</span><h2 class="t">🌟 Wat krijg je ervoor terug?</h2></div><div class="cards"><div class="card rv d0"><span class="em">💪</span><b>Een <strong>topsalaris</strong> dat meegroeit met jouw resultaten</b></div><div class="card rv d1"><span class="em">🚀</span><b><strong>Auto, telefoon en laptop</strong> van de zaak. Logisch, vinden wij</b></div><div class="card rv d2"><span class="em">🤝</span><b>Een <strong>groeiend bedrijf</strong>: wat jij vandaag opbouwt, is over een jaar twee keer zo groot</b></div><div class="card rv d3"><span class="em">⭐</span><b>Doorgroeien? Bij ons betekent groei van het bedrijf ook <strong>groei voor jou</strong></b></div><div class="card rv d3"><span class="em">🔧</span><b>Elke dag anders: van showroom tot beurs, van dealer tot eindklant</b></div><div class="card rv d3"><span class="em">🎯</span><b>Collega&#x27;s die net zo graag <strong>winnen</strong> als jij</b></div></div><div style="margin-top:26px"><a class="btn" href="#formulier">Solliciteren <span class="ar">→</span></a> </div></div></section>
+<div class="swipehint">→ veeg voor meer foto’s</div></div></section><div class="sep"><svg viewBox="0 0 1200 72" preserveAspectRatio="none"><polygon points="0,8 0,72 1200,72" fill="#ffffff"/></svg></div><section class="blk pad" style="background:#ffffff"><div class="wrap"><div class="rv" style="max-width:640px"><span class="kick">Emergo+</span><h2 class="t">🌟 Wat krijg je ervoor terug?</h2></div><div class="cards"><div class="card rv d0"><span class="em">💪</span><b>Een <strong>topsalaris</strong> dat meegroeit met jouw resultaten</b></div><div class="card rv d1"><span class="em">🚀</span><b><strong>Auto, telefoon en laptop</strong> van de zaak. Logisch, vinden wij</b></div><div class="card rv d2"><span class="em">🤝</span><b>Een <strong>groeiend bedrijf</strong>: wat jij vandaag opbouwt, is over een jaar twee keer zo groot</b></div><div class="card rv d3"><span class="em">⭐</span><b>Doorgroeien? Bij ons betekent groei van het bedrijf ook <strong>groei voor jou</strong></b></div><div class="card rv d3"><span class="em">🔧</span><b>Elke dag anders: van showroom tot beurs, van dealer tot eindklant</b></div><div class="card rv d3"><span class="em">🎯</span><b>Collega&#x27;s die net zo graag <strong>winnen</strong> als jij</b></div></div><div style="margin-top:26px"><a class="btn" href="#formulier">Solliciteren <span class="ar">→</span></a> </div></div></section>
 <div class="sep"><svg viewBox="0 0 1200 72" preserveAspectRatio="none"><polygon points="0,72 1200,8 1200,72" fill="#f5f6f2"/></svg></div><section class="blk alt pad" style="background:#f5f6f2"><div class="wrap"><div class="twocol flip"><div class="txt rv"><span class="kick">Emergo+</span><h2 class="t">Ben jij dit?</h2><p class="lead">Spreek je ook een woordje <strong>Duits</strong> en heb je technisch inzicht? Dikke plus. Maar eerlijk: vink je nog niet alles af en heb jij wél de <strong>drive om te scoren</strong>? Dan willen we je juist spreken.</p><div class="checks"><div class="check rv d0"><span class="ic">✓</span><span>Je bent <strong>commercieel</strong> tot in je tenen: een nee is voor jou een latere ja</span></div><div class="check rv d1"><span class="ic">✓</span><span>Minimaal <strong>mbo+</strong> werk- en denkniveau</span></div><div class="check rv d2"><span class="ic">✓</span><span>Je bouwt <strong>relaties</strong> die jaren meegaan, met klanten én collega&#x27;s</span></div><div class="check rv d3"><span class="ic">✓</span><span>Flexibel en <strong>oplossingsgericht</strong>: jij denkt in kansen</span></div><div class="check rv d3"><span class="ic">✓</span><span>Bij voorkeur affiniteit met <strong>elektrotechniek</strong></span></div><div class="check rv d3"><span class="ic">✓</span><span>Bij voorkeur woon je in <strong>regio Midden-Nederland</strong></span></div></div></div><div class="photostack rv d2"><img src="img/thumbs.jpg" alt="Emergo+" loading="lazy" onerror="this.parentNode.style.display='none'"></div></div></div></section>
-<section class="videoband"><div class="wrap"><div class="vidgrid" style="grid-template-columns:1fr 1fr">
+<section class="videoband"><div class="wrap"><div class="vidgrid two">
 <div class="rv"><span class="kick">Emergo+</span><h2 class="t">Over Emergo+</h2><p class="lead">Emergo+ verkoopt wat we <strong>zelf bouwen</strong>: de PowerXtreme lithium accu&#x27;s, gemaakt onder onze eigen naam EmergoStar. Geen tussenlagen, geen import-verhaal. Jij verkoopt een product waarvan je de makers <strong>persoonlijk kent</strong>, en dat verkoopt een stuk makkelijker.</p>
 </div>
 <div class="photostack rv d2"><img src="img/pand.jpg" alt="Emergo+" loading="lazy" onerror="this.parentNode.style.display='none'"></div>
@@ -212,9 +271,9 @@ background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border-top:1px solid
 <h3>Solliciteer bij Emergo+</h3>
 <div class="fsub">Naam en nummer is genoeg, de rest komt later.</div>
 <form onsubmit="return sendApp(this)">
-<label>Naam*</label><input name="naam" required placeholder="Voor- en achternaam">
-<label>Telefoonnummer*</label><input name="tel" required placeholder="06 - 12 34 56 78">
-<label>E-mailadres*</label><input type="email" name="email" required placeholder="jij@voorbeeld.nl">
+<label>Naam*</label><input name="naam" required autocomplete="name" placeholder="Voor- en achternaam">
+<label>Telefoonnummer*</label><input name="tel" type="tel" inputmode="tel" required autocomplete="tel" placeholder="06 - 12 34 56 78">
+<label>E-mailadres*</label><input type="email" name="email" required autocomplete="email" inputmode="email" placeholder="jij@voorbeeld.nl">
 <label>Vertel kort iets over jezelf (optioneel)</label><textarea name="msg" rows="3" placeholder="Bijv. je ervaring of wanneer je kunt beginnen"></textarea>
 <button class="btn" type="submit">Verstuur sollicitatie <span class="ar">→</span></button>
 <div class="note">Emergo+ neemt zelf contact met je op.</div>
@@ -230,7 +289,7 @@ return false;}
 </script>
 </div></div></section>
 <footer><div class="wrap"><span>© Emergo+ · PowerXtreme</span><span>Emergo+</span></div></footer>
-<div class="stickycta"><a class="btn" href="#formulier">Solliciteer direct <span class="ar">→</span></a></div>
+<div class="stickycta"><a class="btn" href="#formulier">Solliciteer direct <span class="ar">→</span></a><a class="callbtn" href="tel:+31646394517" aria-label="Bel ons direct">📞</a></div>
 <script>
 var hdr=document.getElementById('hdr');
 addEventListener('scroll',function(){hdr.classList.toggle('solid',scrollY>40)},{passive:true});
