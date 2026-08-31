@@ -303,6 +303,6 @@ function attach(){var h=new Hls();h.loadSource(src);h.attachMedia(vd);h.on(Hls.E
 vp.addEventListener('click',function(){if(vc.classList.contains('hide'))return;
 if(vd.canPlayType('application/vnd.apple.mpegurl')){if(!vd.src){vd.src=src;}go();}
 else if(window.Hls){if(!vd.dataset.h){vd.dataset.h=1;attach();}else{go();}}
-else{var s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/hls.js/1.5.13/hls.min.js';s.onload=function(){vd.dataset.h=1;attach();};document.head.appendChild(s);}});});});
+else{var s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/hls.js/1.5.13/hls.min.js';s.onload=function(){vd.dataset.h=1;attach();};document.head.appendChild(s);}});});
 </script>
 </body></html>
