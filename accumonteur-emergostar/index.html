@@ -257,8 +257,8 @@ footer{padding:26px 0}
 <div class="sep"><svg viewBox="0 0 1200 72" preserveAspectRatio="none"><path d="M0,44 C200,10 400,76 600,44 C800,10 1000,74 1200,44 L1200,72 L0,72 Z" fill="#f5f6f2"/></svg></div><section class="blk alt pad" style="background:#f5f6f2"><div class="wrap"><div class="twocol"><div class="txt rv"><span class="kick">EmergoStar</span><h2 class="t">Geen dag standaard schroefwerk</h2><p class="lead">Als accumonteur bouw je de accu op van kaal frame tot <strong>getest eindproduct</strong>. Cellen, elektronica, bekabeling, eindcontrole: jij doet het hele proces, niet één stationnetje. Gaat er iets beter of slimmer? Bij ons zeg je dat gewoon, en morgen doen we het zo.</p><p class="lead">En het mooiste: het product dat jij bouwt, kom je in de zomer gewoon tegen op de camping. <strong>Daar wijs je dan even naar.</strong></p><div style="margin-top:26px"><a class="btn" href="#formulier">Vertel me meer <span class="ar">→</span></a> </div></div><div class="photostack rv d2"><img src="img/werk.jpg" alt="EmergoStar" loading="lazy" onerror="this.parentNode.style.display='none'"></div></div></div></section>
 <section class="videoband"><div class="wrap">
 <div class="rv" style="max-width:660px"><span class="kick">EmergoStar</span>
-<h2 class="t">Kijk mee in de werkplaats</h2><p class="lead">Zien waar je komt te werken zegt meer dan duizend woorden. <strong>Binnenkort staat hier de bedrijfsvideo</strong>, vers van de filmdag.</p></div>
-<div class="vidgrid"><div class="vph rv"><div class="play">▶</div><b>Hier komt de bedrijfsvideo</b><span>De video van de filmdag verschijnt hier binnenkort.</span></div></div>
+<h2 class="t">Kijk mee in de werkplaats</h2><p class="lead">Zien waar je komt te werken zegt meer dan duizend woorden. Druk op play en <strong>proef de sfeer</strong>, vers van de filmdag.</p></div>
+<div class="vidgrid"><div class="vplayer rv" data-hls="/video/emergo.m3u8"><video playsinline preload="none" poster="/video/poster.jpg"></video><div class="cover" style="background-image:url('/video/poster.jpg')"><div class="playbtn">▶</div><b>Bekijk de bedrijfsvideo</b></div></div><b>Hier komt de bedrijfsvideo</b><span>De video van de filmdag verschijnt hier binnenkort.</span></div></div>
 
 </div></section>
 <section class="polasec"><div class="wrap">
@@ -305,12 +305,12 @@ addEventListener('scroll',function(){hdr.classList.toggle('solid',scrollY>40)},{
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
 document.querySelectorAll('.rv:not(.in)').forEach(function(el){io.observe(el)});
 document.querySelectorAll('.vplayer').forEach(function(vp){
-var vc=vp.querySelector('.cover'),vd=vp.querySelector('video'),src=vp.dataset.src;
+var vc=vp.querySelector('.cover'),vd=vp.querySelector('video'),src=vp.dataset.hls;
+function go(){var p=vd.play();vd.controls=true;if(p&&p.then){p.then(function(){vc.classList.add('hide')}).catch(function(){});}else{vc.classList.add('hide')}}
+function attach(){var h=new Hls();h.loadSource(src);h.attachMedia(vd);h.on(Hls.Events.MANIFEST_PARSED,go);}
 vp.addEventListener('click',function(){if(vc.classList.contains('hide'))return;
-if(!vd.querySelector('source')){var so=document.createElement('source');so.src=src;so.type='video/mp4';vd.appendChild(so);vd.load();}
-var pr=vd.play();vd.controls=true;
-if(pr&&pr.then){pr.then(function(){vc.classList.add('hide')}).catch(function(){window.open(src,'_blank')});}
-else{vc.classList.add('hide')}
-vd.addEventListener('error',function(){window.open(src,'_blank')});});});
+if(vd.canPlayType('application/vnd.apple.mpegurl')){if(!vd.src){vd.src=src;}go();}
+else if(window.Hls){if(!vd.dataset.h){vd.dataset.h=1;attach();}else{go();}}
+else{var s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/hls.js/1.5.13/hls.min.js';s.onload=function(){vd.dataset.h=1;attach();};document.head.appendChild(s);}});});});
 </script>
 </body></html>
