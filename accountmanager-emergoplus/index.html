@@ -234,6 +234,9 @@ h2.t{font-size:1.5rem}
 .swipehint{display:block;text-align:center;font-size:.84rem;color:var(--muted);font-weight:700;margin-top:4px}
 footer{padding:26px 0}
 }
+
+/* mobiel: geen reveal-animaties, alles direct zichtbaar */
+@media(max-width:760px){.rv{opacity:1 !important;transform:none !important;transition:none !important}}
 </style></head>
 <body id="pagetop">
 <header class="top" id="hdr"><div class="wrap">
@@ -249,8 +252,8 @@ footer{padding:26px 0}
 <div class="sep"><svg viewBox="0 0 1200 72" preserveAspectRatio="none"><polygon points="0,8 0,72 1200,72" fill="#f5f6f2"/></svg></div><section class="blk alt pad" style="background:#f5f6f2"><div class="wrap"><div class="twocol"><div class="txt rv"><span class="kick">Emergo+</span><h2 class="t">Geen belscript. Wel resultaat.</h2><p class="lead">Als (technisch) accountmanager krijg je bij Emergo+ iets wat je bij weinig salesbanen krijgt: <strong>een product dat je niet hoeft te verdedigen</strong>. Wij bouwen onze accu&#x27;s zelf, jij vertelt het verhaal. Bestaande klanten houd je warm, nieuwe klanten haal jij binnen, van eerste belletje tot handtekening.</p><p class="lead">De ene dag zit je bij een <strong>dealer</strong> aan tafel, de andere dag overtuig je een nieuwe keten. Jij bepaalt hoe je je week inricht, wij zorgen dat je alles hebt om te knallen.</p><div style="margin-top:26px"><a class="btn" href="#formulier">Vertel me meer <span class="ar">→</span></a> </div></div><div class="photostack rv d2"><img src="img/sales.jpg" alt="Emergo+" loading="lazy" onerror="this.parentNode.style.display='none'"></div></div></div></section>
 <section class="videoband"><div class="wrap">
 <div class="rv" style="max-width:660px"><span class="kick">Emergo+</span>
-<h2 class="t">Proef alvast de sfeer</h2><p class="lead">Cijfers en woorden zijn leuk, maar zien werkt beter. Druk op play en <strong>proef de sfeer</strong>, vers van de filmdag.</p></div>
-<div class="vidgrid"><div class="vplayer rv" data-hls="/video/emergo.m3u8"><video playsinline preload="none" poster="/video/poster.jpg"></video><div class="cover" style="background-image:url('/video/poster.jpg')"><div class="playbtn">▶</div><b>Bekijk de bedrijfsvideo</b></div></div><b>Hier komt de bedrijfsvideo</b><span>De video van de filmdag verschijnt hier binnenkort.</span></div></div>
+<h2 class="t">Proef alvast de sfeer</h2><p class="lead">Cijfers en woorden zijn leuk, maar zien werkt beter. <strong>Druk op play</strong> en zie waar je aan de slag gaat.</p></div>
+<div class="vidgrid"><div class="vplayer rv" data-hls="/video/emergo.m3u8"><video playsinline preload="none" poster="/video/poster.jpg"></video><div class="cover" style="background-image:url('/video/poster.jpg')"><div class="playbtn">▶</div><b>Bekijk de bedrijfsvideo</b></div></div></div>
 
 </div></section>
 <section class="polasec"><div class="wrap">
@@ -289,17 +292,13 @@ setTimeout(function(){document.getElementById('formok').style.display='block';f.
 return false;}
 </script>
 </div></div></section>
-<footer><div class="wrap"><span>© Emergo+ · PowerXtreme</span><span>Emergo+</span></div></footer>
+<footer><div class="wrap"><span>© Emergo+ · PowerXtreme</span><span>Campagne door <a href="https://www.wolfonlinemarketing.com" target="_blank" rel="noopener" style="color:#c3cfc5;text-decoration:underline">Wolf Online Marketing</a></span></div></footer>
 <div class="stickycta"><a class="btn" href="#formulier">Solliciteer direct <span class="ar">→</span></a><a class="callbtn" href="tel:+31646394517" aria-label="Bel ons direct">📞</a></div>
 <script>
 var hdr=document.getElementById('hdr');
 addEventListener('scroll',function(){hdr.classList.toggle('solid',scrollY>40)},{passive:true});
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
 document.querySelectorAll('.rv:not(.in)').forEach(function(el){io.observe(el)});
-document.querySelectorAll('.vplayer').forEach(function(vp){
-var vc=vp.querySelector('.cover'),vd=vp.querySelector('video'),src=vp.dataset.hls;
-function go(){var p=vd.play();vd.controls=true;if(p&&p.then){p.then(function(){vc.classList.add('hide')}).catch(function(){});}else{vc.classList.add('hide')}}
-function attach(){var h=new Hls();h.loadSource(src);h.attachMedia(vd);h.on(Hls.Events.MANIFEST_PARSED,go);}
-vp.addEventListener('click',function(){if(vc.classList.contains('hide'))return;function nativeGo(){if(!vd.getAttribute('src')){vd.src=src;}go();}function useHls(){if(window.Hls&&Hls.isSupported()){if(!vd.dataset.h){vd.dataset.h=1;attach();}else{go();}}else{nativeGo();}}if(window.Hls){useHls();}else{var s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/hls.js/1.5.13/hls.min.js';s.onload=useHls;s.onerror=nativeGo;document.head.appendChild(s);}});});
+document.querySelectorAll('.vplayer').forEach(function(vp){var vc=vp.querySelector('.cover'),vd=vp.querySelector('video'),src=vp.dataset.hls,h=null;vd.addEventListener('playing',function(){vc.classList.add('hide')});function ensureLib(cb){if(window.Hls){cb(false);}else{var s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/hls.js/1.5.13/hls.min.js';s.onload=function(){cb(false)};s.onerror=function(){cb(true)};document.head.appendChild(s);}}function prep(){ensureLib(function(fail){if(!fail&&window.Hls&&Hls.isSupported()){if(!h){h=new Hls({maxBufferLength:14});h.loadSource(src);h.attachMedia(vd);}}else{vd.preload='auto';if(!vd.getAttribute('src')){vd.src=src;vd.load();}}});}if('IntersectionObserver' in window){new IntersectionObserver(function(es,io){es.forEach(function(e){if(e.isIntersecting){io.disconnect();prep();}});},{rootMargin:'300px'}).observe(vp);}vp.addEventListener('click',function(){if(vc.classList.contains('hide'))return;prep();var t=setInterval(function(){var p=vd.play();if(p&&p.then){p.then(function(){clearInterval(t);vd.controls=true;vc.classList.add('hide')}).catch(function(){});}},400);setTimeout(function(){clearInterval(t)},15000);});});
 </script>
 </body></html>
