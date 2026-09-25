@@ -286,9 +286,15 @@ footer{padding:26px 0}
 </div>
 <script>
 function sendApp(f){
+var btn=f.querySelector('button[type=submit]');btn.disabled=true;btn.innerHTML='Versturen…';
+var data={naam:f.naam.value,telefoon:f.tel.value,email:f.email.value,bericht:f.msg.value,vacature:'(technisch) Accountmanager - PowerXtreme',pagina:'https://komwerkenbij.net/accountmanager-emergoplus',_subject:'Sollicitatie (technisch) Accountmanager | PowerXtreme'};
+fetch('https://formspree.io/f/xnpnzwqg',{method:'POST',headers:{'Accept':'application/json','Content-Type':'application/json'},body:JSON.stringify(data)})
+.then(function(r){if(!r.ok)throw 0;document.getElementById('formok').style.display='block';f.style.display='none';})
+.catch(function(){
 var b='Pagina: https://komwerkenbij.net/accountmanager-emergoplus%0D%0ANaam: '+encodeURIComponent(f.naam.value)+'%0D%0ATelefoon: '+encodeURIComponent(f.tel.value)+'%0D%0AE-mail: '+encodeURIComponent(f.email.value)+'%0D%0A%0D%0A'+encodeURIComponent(f.msg.value);
 window.location.href='mailto:vacatures@emergoplus.com?subject='+encodeURIComponent('Sollicitatie via Vacature (technisch) Accountmanager | PowerXtreme')+'&body='+b;
 setTimeout(function(){document.getElementById('formok').style.display='block';f.style.display='none';},900);
+});
 return false;}
 </script>
 </div></div></section>
